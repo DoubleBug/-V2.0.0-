@@ -1,0 +1,60 @@
+*{margin: 0;padding: 0;}
+body{overflow-x: hidden;background: #F4F4F4;}
+ul,li{list-style: none;display: block;}
+
+
+section{background: #fff;}
+.login_title header {height: 0.88rem;line-height: 46px;background: #F6AB00;color: #fff;font-size: 1.2em;position: relative;text-align: center;}
+.blank{width: 100%;height: 0.24rem;background: #F4F4F4;}
+.content_xl{width: 96%;margin-left: 4%;}
+.firName{font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;letter-spacing: 0;line-height: 0.36rem;display: block;width: 5.18rem;height: 0.72rem;}
+.content_xl_rig{width: 5.18rem;float: right;margin-top: 0.33rem;}
+.secNum{font-family: PingFangSC-Light;font-size: 0.22rem;color: #FF5348;display: block;margin-top: 0.08rem;}
+.thirPri{font-family: PingFangSC-Medium;font-size: 0.32rem;color: #222222;display: block;margin-top: 0.25rem;border-top: 1px solid #DCDCDC;height: 0.64rem;line-height: 0.64rem;}
+.this_img{background: #FFFFFF;border: 1px solid #DCDCDC;border-radius: 0.03rem;width: 1.28rem;height: 1.28rem;margin: 0.56rem 0.26rem 0.56rem 0;}
+.content_xl{position: relative;}
+.thire{width: 0.4rem;height: 0.4rem;display: block;position: absolute;left: 0.4rem;top: 1.68rem;}
+.money{display: block;float: left;min-width: 1.08rem;height: 0.64rem;line-height: 0.64rem;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #222222;}
+.number{display: block;float: right;min-width: 0.86rem;height: 0.64rem;line-height: 0.64rem;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #222222;}
+.how{display: block;float: right;min-width: 1.02rem;height: 0.64rem;line-height: 0.64rem;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #666666;margin-right: 0.23rem;margin-left: 0.16rem;}
+.contentBox{height: 1.32rem;}
+.descr{color: #999;}
+select{border: none;appearance:none;-moz-appearance:none;-webkit-appearance:none;background: url(../img/operation_ico_dropdown@2x.png) no-repeat scroll right center transparent;background-size: 0.16rem 0.32rem;padding-right: 14px;}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { display: none; }
+.fileBlank{width: 100%;height: 3.42rem;}
+.select{width: 6.72rem;height: 0.84rem;margin: 0.23rem 0.24rem;background: #F4F4F4;border: 1px solid #DCDCDC;}
+.words{display: block;min-width:0.96rem;height: 0.33rem;float: left;margin: 0.25rem 0.23rem;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #222222;}
+select{display: block;float: left;min-width: 5.06rem;height: 0.33rem;margin-top: 0.25rem;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #999999;}
+.textarea{width: 6.72rem;height: 1.76rem;margin: 0 0.24rem;background: #F4F4F4;}
+.cencelDescr{display: block;float: left;min-width: 0.96rem;height: 0.33rem;margin-right: 0.23rem;margin-left: 0.23rem;margin-top: 0.27rem;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #222222;}
+textarea{display: block;width: 5rem;border: none;background: #F4F4F4;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #999999;float: left;margin-top: 0.27rem;}
+.wordNum{display: block;float: right;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #999999;margin-right: 0.23rem;}
+.shuoming{width: 100%;height: 0.8rem;background: #F4F4F4;}
+.shuoming span{display: block;width: 6.72rem;padding: 0.19rem 0.24rem 0;font-family: PingFangSC-Regular;font-size: 0.22rem;color: #999999;}
+.shuoming span i{color: #FF5348;font-style: normal;}
+
+footer{width: 100%;height: 0.98rem;position: fixed;left: 0;bottom: 0;background: #FFFFFF;box-shadow: 0 -3px 3px 0 rgba(0,0,0,0.06);}
+footer .gotoPay{width: 2rem;height: 0.98rem;float: right;text-align: center;line-height: 0.98rem;font-family: PingFangSC-Regular;font-size: 0.32rem;color: #FFFFFF;background: #FF5348;}
+
+.sel img{display: block;float: left;width:0.4rem;height: 0.4rem;margin: 0.29rem 0.24rem;}
+.sel span {display: block;float: left;width: 0.56rem;height: 0.4rem;margin: 0.29rem 0;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;}
+
+/*.choose{display: block;width: 0.4rem;height: 0.4rem;float: left;margin-left: 0.24rem;margin-top: 0.22rem;background: url(../img/shopping_btn_normal.png) no-repeat;background-size: 100% 100%;}
+.sure{display: block;width: 0.4rem;height: 0.4rem;float: left;margin-left: 0.24rem;margin-top: 0.22rem;background: url(../img/shopping_btn_selected.png) no-repeat;background-size: 100% 100%;}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

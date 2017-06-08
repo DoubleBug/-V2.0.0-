@@ -1,0 +1,99 @@
+*{margin: 0;padding: 0;}
+body{overflow-x: hidden;background: #F4F4F4;}
+ul,li{list-style: none;display: block;}
+
+
+section{background: #fff;}
+.login_title header {height: 0.88rem;line-height: 46px;background: #F6AB00;color: #fff;font-size: 1.2em;position: relative;text-align: center;}
+.banner{width: 100%;height: 1.62rem;background: url(../img/sod_bg_shipped@3x.png) no-repeat;background-size: 100% 100%;}
+.banner span:first-child{display: block;font-family: PingFangSC-Regular;font-size: 0.3rem;color: #FFFFFF;height: 0.42rem;padding-top: 0.47rem;margin-left: 0.45rem;}
+.banner span:last-child{display: block;font-family: PingFangSC-Regular;font-size: 0.22rem;color: #FFFFFF;height: 0.3rem;margin-top: 0.06rem;margin-left: 0.45rem;}
+.line_xl{display: block;height: 0.24rem;border: 0.04rem solid #222;width: 0;float: left;margin-top: 0.3rem;}
+.title_xl{width: 92%;padding: 0 4%;height: 0.84rem;border-bottom: 1px solid #DCDCDC;}
+.name_xl{font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;display: block;float: left;line-height: 0.84rem;margin-left: 0.18rem;}
+.name_xl span{font-family: PingFangSC-Regular;font-size: 0.28rem;color: #666666;}
+.state_xl{font-family: PingFangSC-Regular;font-size: 0.28rem;color: #FF5348;display: block;float: right;line-height: 0.84rem;margin-right: 0.14rem;}
+.order{width: 100%;height: 1.48rem;}
+.order_lef span:first-child,.order_rig span:first-child{font-family: PingFangSC-Regular;font-size: 0.28rem;color: #666666;display: block;margin-top: 0.12rem;}
+.order_lef span:last-child,.order_rig span:last-child{font-family: PingFangSC-Light;font-size: 0.24rem;color: #222222;display: block;margin-top: 0.04rem;}
+.order_lef,.order_rig{width: 49%;height: 1rem;float: left;text-align: center;margin-top: 0.24rem;}
+.order_rig{border-left: 1px solid #DCDCDC;}
+.blank{width: 100%;height: 0.24rem;background: #F4F4F4;}
+.addressOrder{width: 100%;height: 1.64rem;}
+.addressOrder img{width: 0.26rem;height: 0.33rem;margin: 0.66rem 0.23rem 0.65rem 0.24rem;display: block;float: left;}
+.addressOrderDatail{float: left;height: 1.64rem;width: 6.28rem;}
+.addressOrderDatail span:first-child{font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;display: block;height: 0.4rem;margin-top: 0.26rem;}
+.addressOrderDatail span:last-child{font-family: PingFangSC-Regular;font-size: 0.24rem;color: #999999;display: block;margin-top: 0.06rem;}
+.carType_xl_top_fir{width: 93.3%;margin:0 3.3%;height: 0.78rem;}
+.carType_xl_top_fir img{width: 0.32rem;height: 0.26rem;display: block;float: left;margin-top: 0.26rem;margin-right: 0.19rem;}
+.carType_xl_top_fir span{font-family: PingFangSC-Regular;font-size: 0.24rem;color: #666666;line-height: 0.78rem;display: block;float: left;}
+.carType_xl_top_second{font-family: PingFangSC-Regular;font-size: 0.24rem;color: #999999;width: 93.3%;margin:0 3.3%;height: 0.64rem;line-height: 0.64rem;background: #F4F4F4;text-indent: 0.19rem;}
+.this_img{background: #FFFFFF;border: 1px solid #DCDCDC;border-radius: 0.03rem;width: 1.28rem;height: 1.28rem;margin: 0.56rem 0.26rem 0.56rem 0;}
+.content_xl{width: 96%;margin-left: 4%;border-bottom: 1px solid #DCDCDC;}
+.firName{font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;letter-spacing: 0;line-height: 0.36rem;display: block;width: 5.18rem;height: 0.72rem;}
+.content_xl_rig{width: 5.18rem;float: right;margin-top: 0.33rem;}
+.secNum{font-family: PingFangSC-Light;font-size: 0.22rem;color: #999999;display: block;margin-top: 0.08rem;}
+.thirPri{font-family: PingFangSC-Medium;font-size: 0.32rem;color: #222222;display: block;margin-top: 0.25rem;}
+.thirPri span{background: #FFB400;border-radius: 0.03rem;font-family: PingFangSC-Regular;font-size: 0.22rem;color: #FFFFFF;padding: 0.04rem 0.14rem;}
+
+
+.peis,.shouh,.yic{width: 100%;height: 1.08rem;}
+.shouh{background: #F4F4F4;}
+.showState{width: 1.12rem;height: 0.4rem;float: left;margin-left: 0.23rem;margin-top: 0.34rem;display: block;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;}
+.otherMess ul{width: 5.85rem;height: 1.08rem;float: left;}
+.otherMess ul li{width: 33.33%;height: 1.08rem;float: left;text-align: center;}
+.otherMess ul li .state{display: block;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #666666;margin-top: 0.18rem;}
+.otherMess ul li .num{display: block;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #222222;}
+
+.messDetail{width: 100%;height: 2.9rem;}
+.tilt_top{width: 100%;height: 0.62rem;border-bottom: 1px solid #DCDCDC;}
+.tile{width: 1.4rem;height: 0.4rem;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;line-height: 0.4rem;display: block;margin-left: 0.23rem;margin-top: 0.22rem;}
+.youzheng,.tiantian,.yunda{height: 0.4rem;width: 100%;margin-top: 0.18rem;}
+.kdName{display: block;min-width: 1.12rem;height: 0.4rem;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #666666;float: left;margin-left: 0.23rem;}
+.kdNum{display: block;min-width: 1.29rem;height:0.4rem;font-family: PingFangSC-Light;font-size: 0.28rem;color: #999999;float: left;margin-left: 0.15rem;}
+.kdState{font-family: PingFangSC-Regular;font-size: 0.24rem;color: #222222;min-width: 0.72rem;height: 0.33rem;display: block;float: right;margin-right: 0.13rem;}
+.gowhere{width: 0.16rem;height: 0.29rem;float: right;margin-right: 0.24rem;}
+.kdwrong{margin-right:0.16rem;background: url(../img/common_bg_abnormal@2x.png) no-repeat;min-width: 0.87rem;height: 0.44rem;background-size: 100% 100%;text-align: center;line-height: 0.44rem;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #222222;display: block;float: right;}
+
+.wayTransport{width: 96%;margin-left: 4%;border-bottom: 1px solid #DCDCDC;height: 0.84rem;}
+.wayTransport span:first-child{width: 1.4rem;height: 0.4rem;display: block;float: left;margin-top: 0.22rem;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;}
+.wayTransport span:last-child{display: block;height: 0.33rem;float: right;margin-right: 0.23rem;margin-top: 0.26rem;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #666666;}
+.totalPrice{width: 96%;margin-left: 4%;height: 0.4rem;margin-top: 0.25rem;}
+.totalAmount{width: 100%;height: 3.82rem;}
+.totalPrice span:first-child{font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;width: 1.4rem;height: 0.4rem;display: block;float: left;}
+.totalPrice span:last-child{height: 0.33rem;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #222222;display: block;float: right;margin-top: 0.05rem;margin-right: 0.23rem;}
+.totalAmount1 span:first-child,.totalAmount2 span:first-child,.totalAmount3 span:first-child,.totalAmount4 span:first-child,.totalAmount5 span:first-child{font-family: PingFangSC-Regular;font-size: 0.28rem;color: #666666;height: 0.4rem;display: block;float: left;margin-left: 0.42rem;}
+.totalAmount1 span:last-child,.totalAmount2 span:last-child,.totalAmount3 span:last-child,.totalAmount4 span:last-child{height: 0.33rem;display: block;float: right;font-family: PingFangSC-Light;font-size: 0.24rem;color: #222222;margin-right: 0.23rem;}
+.totalAmount1,.totalAmount2,.totalAmount3,.totalAmount4,.totalAmount5{width: 100%;height: 0.4rem;margin-top: 0.1rem;}
+.totalAmount5 span:last-child{font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;display: block;float: right;height: 0.4rem;margin-right: 0.23rem;}
+.totalAmount1{margin-top: 0.22rem;}
+.totalAmount5{margin-top: 0.4rem;}
+
+.leaveWords{width: 96%;margin-left: 4%;height: 1rem;border-top: 1px solid #DCDCDC;}
+.leaveWords span:first-child{width: 1.4rem;height: 0.4rem;display: block;float: left;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;margin-top: 0.24rem;}
+.leaveWords span:last-child{width: 5.32rem;height: 0.72rem;display: block;float: left;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #666666;line-height: 0.36rem;margin-top: 0.24rem;}
+.realDetails{height: 4.14rem;}
+
+.PayAmount{width: 96%;margin-left: 4%;height: 1.4rem;border-top: 1px solid #DCDCDC;}
+.PayAmount1,.PayAmount2{width: 100%;height: 0.4rem;}
+.PayAmount1 span:first-child{width: 1.4rem;height: 0.4rem;display: block;float: left;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;}
+.PayAmount1 span:last-child{min-width: 1.52rem;height: 0.4rem;float: right;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;}
+.PayAmount2 span:first-child{width: 1.4rem;height: 0.4rem;display: block;float: left;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #666666;}
+.PayAmount2 span:last-child{min-width: 1.82rem;height: 0.33rem;display: block;float: right;font-family: PingFangSC-Light;font-size: 0.24rem;color: #999999;}
+.PayAmount1{margin-top: 0.25rem;}
+.PayAmount2{margin-top: 0.1rem;}
+
+footer{width: 100%;height: 0.98rem;position: fixed;left: 0;bottom: 0;background: #FFFFFF;box-shadow: 0 -3px 3px 0 rgba(0,0,0,0.06);}
+footer .timerest{width: 3.5rem;height: 0.98rem;float: left;}
+footer .cencelOrder{width: 1.66rem;height: 0.98rem;float: left;text-align: center;line-height: 0.98rem;border-left: 1px solid #DCDCDC;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #666666;}
+footer .gotoPay{width: 2rem;height: 0.98rem;float: right;text-align: center;line-height: 0.98rem;font-family: PingFangSC-Regular;font-size: 0.32rem;color: #FFFFFF;background: #FF5348;}
+footer .timerest span:first-child{font-family: PingFangSC-Regular;font-size: 0.24rem;color: #666666;height: 0.33rem;display: block;margin-top: 0.17rem;margin-left: 0.23rem;}
+footer .timerest span:last-child{font-family: PingFangSC-Regular;font-size: 0.24rem;color: #FF5348;height: 0.33rem;display: block;float: left;margin-left: 0.23rem;}
+.top{position: relative;}
+.absolute{position: absolute;width: 1.2rem;height: 1.1rem;display: block;left: 5.75rem;top:  -0.098rem;}
+
+.bufen{background: url(../img/sod_bg_partialshipment@3x.png) no-repeat;background-size: 100% 100%;}
+.secNum{font-family: PingFangSC-Regular;font-size: 0.24rem!important;color: #FF5348!important;}
+.bufens{background: url(../img/sod_bg_successfultrade@3x.png) no-repeat;background-size: 100% 100%;}
+.bufenss{background: url(../img/sod_bg_pendingaudit@3x.png) no-repeat;background-size: 100% 100%;}
+.bufensss{background: url(../img/sod_bg_wfd@3x.png) no-repeat;background-size: 100% 100%;}

@@ -1,0 +1,110 @@
+*{margin: 0;padding: 0;}
+body{overflow-x: hidden;background: #F4F4F4;}
+ul,li{list-style: none;display: block;}
+
+section{background: #fff;}
+.login_title header {height: 0.88rem;line-height: 46px;background: #F6AB00;color: #fff;font-size: 1.2em;position: relative;text-align: center;}
+.sear_xl{width: 0.32rem;height: 0.32rem;position: absolute;right: 0.24rem;top: 0.28rem;}
+.line_xl{display: block;height: 0.24rem;border: 0.04rem solid #222;width: 0;float: left;margin-top: 0.3rem;}
+.title_xl{width: 92%;padding: 0 4%;height: 0.84rem;border-bottom: 1px solid #DCDCDC;}
+.name_xl{font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;display: block;float: left;line-height: 0.84rem;margin-left: 0.18rem;}
+.name_xl span{font-family: PingFangSC-Regular;font-size: 0.28rem;color: #666666;}
+.state_xl{font-family: PingFangSC-Regular;font-size: 0.28rem;color: #FF5348;display: block;float: right;line-height: 0.84rem;margin-right: 0.14rem;}
+.order{width: 100%;height: 1.48rem;}
+.order_lef span:first-child,.order_rig span:first-child{font-family: PingFangSC-Regular;font-size: 0.28rem;color: #666666;display: block;margin-top: 0.12rem;}
+.order_lef span:last-child,.order_rig span:last-child{font-family: PingFangSC-Light;font-size: 0.24rem;color: #222222;display: block;margin-top: 0.04rem;}
+.order_lef,.order_rig{width: 49%;height: 1rem;float: left;text-align: center;margin-top: 0.24rem;}
+.order_rig{border-left: 1px solid #DCDCDC;}
+.blank{width: 100%;height: 0.24rem;background: #F4F4F4;}
+.addressOrder{width: 100%;height: 1.64rem;}
+.addressOrder img{width: 0.26rem;height: 0.33rem;margin: 0.66rem 0.23rem 0.65rem 0.24rem;display: block;float: left;}
+.addressOrderDatail{float: left;height: 1.64rem;width: 6.28rem;}
+.addressOrderDatail span:first-child{font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;display: block;height: 0.4rem;margin-top: 0.26rem;}
+.addressOrderDatail span:last-child{font-family: PingFangSC-Regular;font-size: 0.24rem;color: #999999;display: block;margin-top: 0.06rem;}
+.this_img{background: #FFFFFF;border: 1px solid #DCDCDC;border-radius: 0.03rem;width: 1.28rem;height: 1.28rem;margin: 0.56rem 0.26rem 0.56rem 0;}
+.content_xl{width: 96%;margin-left: 4%;border-bottom: 1px solid #DCDCDC;}
+.firName{font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;letter-spacing: 0;line-height: 0.36rem;display: block;width: 5.18rem;height: 0.72rem;}
+.content_xl_rig{width: 5.18rem;float: right;margin-top: 0.33rem;}
+.secNum{font-family: PingFangSC-Light;font-size: 0.22rem;color: #999999;display: block;margin-top: 0.08rem;}
+.thirPri{font-family: PingFangSC-Medium;font-size: 0.32rem;color: #222222;display: block;margin-top: 0.25rem;}
+.showmore{width: 100%;height: 0.84rem;border-top: 1px solid #DCDCDC;text-align: center;line-height: 0.84rem;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #666666;}
+
+.wayTransport{width: 96%;margin-left: 4%;border-bottom: 1px solid #DCDCDC;height: 0.84rem;}
+.wayTransport span:first-child{width: 1.4rem;height: 0.4rem;display: block;float: left;margin-top: 0.22rem;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;}
+.wayTransport span:last-child{display: block;height: 0.33rem;float: right;margin-right: 0.23rem;margin-top: 0.26rem;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #666666;}
+.totalPrice{width: 96%;margin-left: 4%;height: 0.4rem;margin-top: 0.25rem;}
+.totalAmount{width: 100%;height: 3.82rem;}
+.totalPrice span:first-child{font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;width: 1.4rem;height: 0.4rem;display: block;float: left;}
+.totalPrice span:last-child{height: 0.33rem;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #222222;display: block;float: right;margin-top: 0.05rem;margin-right: 0.23rem;}
+.totalAmount1 span:first-child,.totalAmount2 span:first-child,.totalAmount3 span:first-child,.totalAmount4 span:first-child,.totalAmount5 span:first-child{font-family: PingFangSC-Regular;font-size: 0.28rem;color: #666666;height: 0.4rem;display: block;float: left;margin-left: 0.42rem;}
+.totalAmount1 span:last-child,.totalAmount2 span:last-child,.totalAmount3 span:last-child,.totalAmount4 span:last-child{height: 0.33rem;display: block;float: right;font-family: PingFangSC-Light;font-size: 0.24rem;color: #222222;margin-right: 0.23rem;}
+.totalAmount1,.totalAmount2,.totalAmount3,.totalAmount4,.totalAmount5{width: 100%;height: 0.4rem;margin-top: 0.1rem;}
+.totalAmount5 span:last-child{font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;display: block;float: right;height: 0.4rem;margin-right: 0.23rem;}
+.totalAmount1{margin-top: 0.22rem;}
+.totalAmount5{margin-top: 0.4rem;}
+
+
+/*footer*/
+footer{width: 100%;height: 0.98rem;position: fixed;left: 0;bottom: 0;background: #FFFFFF;box-shadow: 0 -3px 3px 0 rgba(0,0,0,0.06);}
+footer .timerest{width: 3.5rem;height: 0.98rem;float: left;}
+footer .cencelOrder{width: 1.66rem;height: 0.98rem;float: left;text-align: center;line-height: 0.98rem;border-left: 1px solid #DCDCDC;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #666666;}
+footer .gotoPay{width: 2rem;height: 0.98rem;float: right;text-align: center;line-height: 0.98rem;font-family: PingFangSC-Regular;font-size: 0.32rem;color: #FFFFFF;background: #FF5348;}
+footer .timerest span:first-child{font-family: PingFangSC-Regular;font-size: 0.24rem;color: #666666;height: 0.33rem;display: block;margin-top: 0.17rem;margin-left: 0.23rem;}
+footer .timerest span:last-child{font-family: PingFangSC-Regular;font-size: 0.24rem;color: #FF5348;height: 0.33rem;display: block;float: left;margin-left: 0.23rem;}
+
+
+
+.top{background: url(../img/back_img_exchangeorder@2x.png) 5.75rem 0.098rem no-repeat; background-size:1.2rem 1.1rem;}
+.navigation{width: 100%;height: 1.04rem;border-bottom: 1px solid #DCDCDC;}
+.navigation li{float: left;width: 25%;height: 1.04rem;text-align: center;}
+.navigation li span{display: block;}
+.navigation li span:first-child{font-family: PingFangSC-Light;font-size: 0.28rem;color: #666666;margin-top: 0.2rem;}
+.navigation li span:nth-child(2){font-family: PingFangSC-Light;font-size: 0.2rem;color: #999999;}
+
+.adds{font-family: PingFangSC-Regular!important;font-size: 0.28rem!important;color: #222222!important;}
+.addss{font-family: PingFangSC-Regular!important;font-size: 0.2rem!important;color: #666666!important;}
+.addsss{display: block;width: 0.88rem;height: 0.06rem;background: #FFBA00;margin-left: 0.47rem;}
+
+.thirPri span{display: block;height: 0.4rem;float: right;margin-right: 0.22rem;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #FF5348;}
+.content_xl{position: relative;}
+.thire{width: 0.4rem;height: 0.4rem;display: block;position: absolute;left: 0.4rem;top: 1.68rem;}
+
+.calculate{width: 100%;min-height: 0.84rem;border-bottom: 1px solid #DCDCDC;}
+.calculate span{font-family: PingFangSC-Light;font-size: 0.24rem;color: #666666;display: block;width: 1.13rem;height: 0.84rem;line-height: 0.84rem;text-align: center;float: right;}
+.spans{color: #FF5348!important;background: url(../img/order_bg_rectangle@3x.png) center 0.72rem no-repeat;background-size: 0.26rem 0.13rem;}
+.logistics{width: 100%;height: 1.8rem;background: #FAFAFA;}
+.shu{display: block;width: 0.04rem;height: 0.2rem;background: #222222;margin-top: 0.34rem;float: left;}
+.logisticsDetail{height: 1.54rem;width: 6.27rem;margin-left: 0.23rem;margin-top: 0.26rem;float: left;}
+.message{display: block;width: 6.27rem;min-height:0.68rem;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #666666;letter-spacing: -0.2px;line-height: 0.34rem;}
+.section{display: block;width: 6.27rem;height: 0.34rem;}
+.section .tel{min-width: 2.25rem;height: 0.34rem;float: left;font-family: PingFangSC-Light;font-size: 0.24rem;color: #999999;line-height: 0.34rem;}
+.section .date{min-width: 2rem;height: 0.34rem;font-family: PingFangSC-Light;font-size: 0.24rem;color: #999999;line-height: 0.34rem;float: right;}
+
+.gootherway{width: 0.16rem;height: 0.29rem;float: right;margin-right: 0.24rem;margin-top: 0.76rem;}
+
+.messDetail{width: 100%;height: 2.9rem;}
+.tilt_top{width: 100%;height: 0.62rem;border-bottom: 1px solid #DCDCDC;}
+.tile{width: 1.4rem;height: 0.4rem;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;line-height: 0.4rem;display: block;margin-left: 0.23rem;margin-top: 0.22rem;}
+.youzheng,.tiantian,.yunda{height: 0.4rem;width: 100%;margin-top: 0.18rem;}
+.kdName{display: block;min-width: 1.12rem;height: 0.4rem;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #666666;float: left;margin-left: 0.23rem;}
+.kdNum{display: block;min-width: 1.29rem;height:0.4rem;font-family: PingFangSC-Light;font-size: 0.28rem;color: #999999;float: left;margin-left: 0.15rem;}
+.kdState{font-family: PingFangSC-Regular;font-size: 0.24rem;color: #222222;min-width: 0.72rem;height: 0.33rem;display: block;float: right;margin-right: 0.13rem;}
+
+.gowhere{width: 0.16rem;height: 0.29rem;float: right;margin-right: 0.24rem;}
+.kdwrong{margin-right:0.16rem;background: url(../img/common_bg_abnormal@2x.png) no-repeat;min-width: 0.87rem;height: 0.44rem;background-size: 100% 100%;text-align: center;line-height: 0.44rem;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #222222;display: block;float: right;}
+
+.leaveWords{width: 96%;margin-left: 4%;height: 1rem;border-top: 1px solid #DCDCDC;}
+.leaveWords span:first-child{width: 1.4rem;height: 0.4rem;display: block;float: left;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;margin-top: 0.24rem;}
+.leaveWords span:last-child{width: 5.32rem;height: 0.72rem;display: block;float: left;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #666666;line-height: 0.36rem;margin-top: 0.24rem;}
+.realDetails{height: 4.14rem;}
+
+.PayAmount{width: 96%;margin-left: 4%;height: 1.4rem;border-top: 1px solid #DCDCDC;}
+.PayAmount1,.PayAmount2{width: 100%;height: 0.4rem;}
+.PayAmount1 span:first-child{width: 1.4rem;height: 0.4rem;display: block;float: left;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;}
+.PayAmount1 span:last-child{min-width: 1.52rem;height: 0.4rem;float: right;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;}
+.PayAmount2 span:first-child{width: 1.4rem;height: 0.4rem;display: block;float: left;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #666666;}
+.PayAmount2 span:last-child{min-width: 1.82rem;height: 0.33rem;display: block;float: right;font-family: PingFangSC-Light;font-size: 0.24rem;color: #999999;}
+.PayAmount1{margin-top: 0.25rem;}
+.PayAmount2{margin-top: 0.1rem;}
+
+.timerests .timerests1,.timerests .timerests2{text-align: center;width: 50%;height: 0.98rem!important;line-height: 0.98rem!important;display: block!important;font-family: PingFangSC-Regular!important;font-size: 0.28rem!important;color: #666666!important;float: left;margin: 0!important;}

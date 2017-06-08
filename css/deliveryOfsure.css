@@ -1,0 +1,33 @@
+*{margin: 0;padding: 0;}
+body{overflow-x: hidden;background: #F4F4F4;}
+ul,li{list-style: none;display: block;}
+
+
+section{background: #fff;}
+.login_title header {height: 0.88rem;line-height: 46px;background: #F6AB00;color: #fff;font-size: 1.2em;position: relative;text-align: center;}
+.blank{width: 100%;height: 0.24rem;background: #F4F4F4;}
+
+.telephone{width: 100%;height: 1.3rem;}
+.tele_lef{width: 5.57rem;height: 0.73rem;border-right: 1px solid #DCDCDC;margin-left: 0.3rem;margin-top: 0.29rem;float: left;}
+.tele_lef span{display: block;}
+.tele_lef span:first-child{font-family: PingFangSC-Regular;font-size: 0.32rem;color: #222222;min-width: 2.3rem;height: 0.45rem;}
+.tele_lef span:last-child{font-family: PingFangSC-Regular;font-size: 0.2rem;color: #999999;min-width: 3.6rem;height: 0.28rem;}
+.tele_rig{float: left;width: 1.3rem;height: 0.73rem;margin-top: 0.29rem;background: url(../img/operation_ico_phone@2x.png) no-repeat center center;background-size: 0.42rem 0.42rem;}
+.blank span{font-family: PingFangSC-Regular;font-size: 0.2rem;color: #BABABA;margin-top: .05rem;margin-left: 0.24rem;display: block;margin-bottom: 0.07rem;}
+.chose{width: 100%;height: 0.84rem;}
+.chose .choose{display: block;width: 0.4rem;height: 0.4rem;float: left;margin-left: 0.24rem;margin-top: 0.22rem;background: url(../img/shopping_btn_normal.png) no-repeat;background-size: 100% 100%;}
+.whichCar{min-width: 1.54rem;height: 0.36rem;display: block;float: left;margin-top: 0.24rem;margin-left: 0.16rem;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;line-height: 0.36rem;}
+.qingdanDetail{width: 6.72rem;height: 1.72rem;margin-bottom: 0.08rem;background: #F4F4F4;border-radius: 0.03rem;margin-left: 0.24rem;}
+.qingdanDetail .img{display: block;float: left;width: 0.99rem;height: 0.99rem;margin-top: 0.25rem;margin-left: 0.25rem;}
+.qingdanDetail .describe{display: block;width: 3.78rem;height: 0.66rem;margin-left: 0.26rem;float: left;font-family: PingFangSC-Light;font-size: 0.24rem;color: #222222;margin-top: 0.41rem;}
+.qingdanDetail .nums{min-width: 0.32rem;height: 0.4rem;display: block;float: left;margin-left: 0.62rem;margin-top: 0.54rem;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;}
+.blanks{height: 0.4rem!important;}
+.carType_xl_top_fir{width: 93.3%;margin:0 3.3%;height: 0.78rem;}
+.carType_xl_top_fir img{width: 0.32rem;height: 0.26rem;display: block;float: left;margin-top: 0.26rem;margin-right: 0.19rem;}
+.carType_xl_top_fir span{font-family: PingFangSC-Regular;font-size: 0.24rem;color:  #999999;line-height: 0.78rem;display: block;float: left;}
+.oneDay{padding-bottom: 0.1rem;}
+
+footer{width: 100%;height: 0.98rem;position: fixed;left: 0;bottom: 0;background: #FFFFFF;box-shadow: 0 -3px 3px 0 rgba(0,0,0,0.06);}
+footer .gotoPay{width: 2rem;height: 0.98rem;float: right;text-align: center;line-height: 0.98rem;font-family: PingFangSC-Regular;font-size: 0.32rem;color: #FFFFFF;background: #FF5348;}
+.chose .sure{display: block;width: 0.4rem;height: 0.4rem;float: left;margin-left: 0.24rem;margin-top: 0.22rem;background: url(../img/shopping_btn_selected.png) no-repeat;background-size: 100% 100%;}
+.danhao{display: block;float: right;min-width: 2.14rem;height: 0.33rem;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #666666;margin-right: 0.24rem;margin-top: 0.24rem;}

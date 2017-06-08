@@ -1,0 +1,74 @@
+*{margin: 0;padding: 0;}
+body{overflow-x: hidden;background: #F4F4F4;}
+ul,li{list-style: none;display: block;}
+
+
+section{background: #fff;}
+.login_title header {height: 0.88rem;line-height: 46px;background: #F6AB00;color: #fff;font-size: 1.2em;position: relative;text-align: center;}
+.blank{width: 100%;height: 0.24rem;background: #F4F4F4;}
+.wuliu{width: 100%;height: 0.84rem;border-bottom: 1px solid #DCDCDC;}
+.wuliu span:first-child{display: block;height: 0.2rem;width: 0.04rem;background: #222222;float: left;margin-top: 0.32rem;margin-left: 0.24rem;}
+.wuliu span:nth-child(2){display: block;width: 1.12rem;height: 0.36rem;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;line-height: 0.36rem;float: left;margin-left: 0.18rem;margin-top: 0.24rem;}
+.wuliu span:last-child{display: block;min-width: 1.4rem;height: 0.36rem;float: right;margin-top: 0.24rem;margin-right: 0.23rem;font-family: PingFangSC-Light;font-size: 0.28rem;color: #666666;line-height: 0.36rem;}
+
+.company{width: 100%;min-height: 2rem;}
+.com-title{width: 100%;height: 0.84rem;}
+.com-title-fir{min-width: 1.12rem;height: 0.36rem;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;line-height: 0.36rem;display: block;float: left;margin-left: 0.23rem;margin-top: 0.24rem;}
+.com-title-sec{min-width: 1.12rem;height: 0.36rem;font-family: PingFangSC-Light;font-size: 0.28rem;color: #666666;line-height: 0.36rem;display: block;float: right;margin-right: 0.23rem;margin-top: 0.24rem;}
+.numTime{width: 6.72rem;height: 1.68rem;margin: 0 0.24rem;background: #F4F4F4;border-radius: 0.06rem;}
+.numTimeOne,.numTimeTwo{height: 0.84rem;width: 6.24rem;margin: 0 0.24rem;}
+.numTimeOne span:first-child,.numTimeTwo span:first-child{min-width: 0.96rem;height: 0.33rem;margin-top: 0.25rem;display: block;float: left;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #666666;}
+.numTimeOne span:last-child,.numTimeTwo span:last-child{min-width: 1.88rem;height: 0.33rem;margin-top: 0.25rem;display: block;float: right;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #999999;text-align: right;}
+.numTimeOne{border-bottom: 1px solid #DCDCDC;}
+.peismess{width: 6.72rem;margin-left: 0.24rem;    height: 1.12rem;}
+.peismess-lef{height: 1.12rem;width: 1.47rem;float: left;}
+.peismess-lef span:first-child{background: url(../img/delivery_ico_ycircle@2x.png) no-repeat right top;background-size: 0.28rem 0.28rem;width: 1.54rem;display: block;height: 0.28rem;text-align: center;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;}
+.peismess-lef span:last-child{width: 1.4rem;height:  0.85rem;border-right: 1px solid #DCDCDC;font-family: PingFangSC-Regular;font-size: 0.2rem;color: #666666;display: block;}
+.peismess-rig{width: 4.98rem;min-height: 0.8rem;font-family: PingFangSC-Regular;font-size: 0.29rem;color: #222222;letter-spacing: -0.7px;margin-left: 0.25rem;float: left;}
+.peismessBox{margin-top: 0.42rem;min-height: 1.9rem;}
+.showmorer{width: 100%;height: 0.84rem;line-height: 0.84rem;text-align: center;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #666666;border-top: 1px solid #DCDCDC;}
+
+
+/*yichang*/
+.yichang{width: 100%;height: 2.92rem;}
+.yichangType,.yichangBz,.yichangResult{width: 6.96rem;margin-left: 0.24rem;}
+.yichangType,.yichangResult{height: 0.84rem;}
+.yichangType span:first-child,.yichangBz span:first-child,.yichangResult span:first-child{width: 1.4rem;height: 0.4rem;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;display: block;float: left;margin-top: 0.22rem;}
+.yichangBz{height: 1.24rem;border-bottom: 1px solid #DCDCDC;border-top: 1px solid #DCDCDC;}
+.yichangType span:last-child{min-width: 1.12rem;height: 0.4rem;display: block;float: left;margin-top: 0.24rem;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #999999;}
+.yichangBz span:last-child{width: 5.35rem;height: 0.8rem;display: block;float: left;margin-top: 0.24rem;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #999999;}
+.yichangResult span:last-child{min-width: 3.33rem;height: 0.4rem;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #666666;display: block;float: left;margin-top: 0.24rem;}
+.yichangResult i{font-style: normal;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #FF5348;line-height: 0.4rem;}
+
+
+/*qingdan*/
+.qingdan{width: 100%;height: 0.84rem;border-bottom: 1px solid #DCDCDC;}
+.qingdan span:first-child{display: block;height: 0.2rem;width: 0.04rem;background: #222222;float: left;margin-top: 0.32rem;margin-left: 0.24rem;}
+.qingdan span:nth-child(2){display: block;width: 1.12rem;height: 0.36rem;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;line-height: 0.36rem;float: left;margin-left: 0.18rem;margin-top: 0.24rem;}
+.qingdanBox{width: 6.72rem;margin: 0 0.24rem;padding-bottom: 0.08rem;}
+.qingdantit{width: 100%;height: 0.72rem;}
+.qingdantit span:first-child,.qingdantit span:last-child{margin-top: 0.19rem;min-width: 0.5rem;height: 0.33rem;display: block;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #999999;}
+.qingdantit span:first-child{float: left;}
+.qingdantit span:last-child{float: right;}
+.qingdanDetail{width: 100%;height: 1.72rem;margin-bottom: 0.08rem;background: #F4F4F4;border-radius: 0.03rem;}
+.qingdanDetail .img{display: block;float: left;width: 0.99rem;height: 0.99rem;margin-top: 0.25rem;margin-left: 0.25rem;}
+.qingdanDetail .describe{display: block;width: 3.78rem;height: 0.66rem;margin-left: 0.26rem;float: left;font-family: PingFangSC-Light;font-size: 0.24rem;color: #222222;margin-top: 0.41rem;}
+.qingdanDetail .nums{min-width: 0.32rem;height: 0.4rem;display: block;float: left;margin-left: 0.62rem;margin-top: 0.54rem;font-family: PingFangSC-Regular;font-size: 0.28rem;color: #222222;}
+
+
+button{border: none;width: 6.72rem;height: 0.84rem;margin: 0.24rem;background: #FF5348;border-radius: 0.06rem;font-family: PingFangSC-Regular;font-size: 0.32rem;color: #FFFFFF;}
+
+
+
+/*第三方签收*/
+.qingdantit span:nth-child(2){float: right;margin-top: 0.19rem;min-width: 0.5rem;height: 0.33rem;display: block;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #999999;margin-left: 0.5rem;}
+/*realnums*/
+.describes{width: 3.7rem!important;}
+.nums2{margin-left: 0.32rem!important;}
+
+.carsMess{width: 6.72rem;height: 2.52rem;margin: 0.2rem 0.24rem;background: #F4F4F4;border-radius: 0.06rem;}
+.carsnum,.siji,.carTel{width: 6.24rem;height: 0.83rem;margin: 0  0.24rem;}
+
+.carsnum span:first-child,.siji span:first-child,.carTel span:first-child{min-width: 0.72rem;height: 0.33rem;display: block;float: left;margin-top: 0.25rem;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #666666;}
+.carsnum span:last-child,.siji span:last-child,.carTel span:last-child{min-width: 0.72rem;height: 0.33rem;display: block;float: right;margin-top: 0.25rem;text-align: right;font-family: PingFangSC-Regular;font-size: 0.24rem;color: #999999;}
+.siji,.carTel{border-top: 1px solid #DCDCDC;}
