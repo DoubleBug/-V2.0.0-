@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>取消订单</title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/cancellationOfOrder.css"/>
+	</head>
+	<body>
+		<div class="login_title" style="position: fixed;top: 0;left: 0;width: 100%;z-index: 13;">
+		    <header class="text-center">
+		        <a id="go" href="javascript:void(0);" style="width:0.19rem;height:0.35rem;font-size:19px;position:absolute;top:0.26rem;left:0.24rem;">
+		            <img style="margin-top:0;width:0.19rem;height:0.35rem;display: block;" src="img/arrow-back .png">
+		        </a>
+		        <h1 class="all_xl" style="margin:0;padding:0;font-size:0.36rem;font-weight:500;height:0.88rem;line-height:46px;color: #222;"><span>订单详情</span></h1>
+		    </header>
+		    <input type="hidden" id="basePath" value="">
+		    <input type="hidden" id="vip" value="0">
+		</div>
+		<section style="margin-top: 0.88rem;margin-bottom: 1.32rem;">
+			<div class="blank"></div>
+			<div class="content_xl">
+				<img class="thire sasi choose" src="img/shopping_btn_normal.png"/>
+				<img class="this_img" src="img/00.jpg"/>
+				<div class="content_xl_rig">
+					<div class="contentBox">
+						<span class="firName">马瑞丽蓄电池es系列46b24rs202丽蓄电瑞丽蓄电池瑞丽蓄瑞丽蓄丽蓄…</span>
+						<span class="secNum">oem:8422-6565</span>
+					</div>
+					<span class="thirPri"><span class="money">¥2880.00</span><span class="how">(1件可退)</span><span class="number">数量：3</span></span>
+				</div>
+			</div>
+			<div class="blank"></div>
+			<div class="content_xl">
+				<img class="thire sasi choose" src="img/shopping_btn_normal.png"/>
+				<img class="this_img" src="img/00.jpg"/>
+				<div class="content_xl_rig">
+					<div class="contentBox">
+						<span class="firName">马瑞丽蓄电池es系列46b24rs202丽蓄电瑞丽蓄电池瑞丽蓄瑞丽蓄丽蓄…</span>
+						<!--<span class="secNum">oem:8422-6565</span>-->
+						<span class="secNum descr">HD5000  青花</span>
+					</div>
+					<span class="thirPri"><span class="money">¥2880.00</span><span class="how">(1件可退)</span><span class="number">数量：3</span></span>
+				</div>
+			</div>
+			<div class="blank"></div>
+			<div class="content_xl">
+				<img class="thire sasi choose" src="img/shopping_btn_normal.png"/>
+				<img class="this_img" src="img/00.jpg"/>
+				<div class="content_xl_rig">
+					<div class="contentBox">
+						<!--<span class="firName">马瑞丽蓄电池es系列46b24rs202丽蓄电瑞丽蓄电池瑞丽蓄瑞丽蓄丽蓄…</span>-->
+						<span class="secNum">oem:8422-6565</span>
+						<!--<span class="secNum descr">HD5000  青花</span>-->
+					</div>
+					
+					<span class="thirPri"><span class="money">¥2880.00</span><span class="how">(1件可退)</span><span class="number">数量：3</span></span>
+				</div>
+			</div>
+			<div class="blank"></div>
+			<div class="fileBlank">
+				<div class="select">
+					<span class="words">取消原因</span>
+					<select name="">
+						<option value="">未选择</option>
+					</select>
+				</div>
+				<div class="textarea">
+					<span class="cencelDescr">取消说明</span>
+					<textarea class="inp" name="" rows="3" onfocus="ss=setInterval(sp,300)" onblur="clearInterval(ss)" cols="" maxlength="45" placeholder="请详细描述你的问题"></textarea>
+					<span class="wordNum">0/45</span>
+				</div>
+			</div>
+			<div class="shuoming">
+				<span>如果您申请取消订单，千品猫将不再安排配送，如有疑问请与客服联系。电话  <i>400-876599</i></span>
+			</div>
+		</section>
+		<footer>
+			<div class="sel">
+				<img src="img/shopping_btn_normal.png"/>
+				<span>全选</span>
+			</div>
+			<div class="gotoPay">确定(<span>0</span>)</div>
+		</footer>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//计算评论字数
+			function sp(){
+			var tex = $('.inp').val();
+//			console.log(tex)
+			var nun =tex.length;
+			var spa = $('.wordNum');
+			spa.text(nun+'/45');
+			}
+			$(".sasi").click(function(){
+				if($(this).hasClass("choose")){
+					$(this).addClass("sure").removeClass("choose");
+					$(this).attr("src","img/shopping_btn_selected.png");
+				}else{
+					$(this).addClass("choose").removeClass("sure");
+					$(this).attr("src","img/shopping_btn_normal.png");
+				}
+				$(".gotoPay span").text($(".sure").length);
+				if($(".sure").length==$(".content_xl").length){
+					$(".sel img").attr("src","img/shopping_btn_selected.png");
+				}else{
+					$(".sel img").attr("src","img/shopping_btn_normal.png");
+				}
+			})
+			$(".sel img").click(function(){
+				if($(".sel img").attr("src")=="img/shopping_btn_selected.png"){
+					$(".sasi").addClass("choose").removeClass("sure");
+					$(".sasi").attr("src","img/shopping_btn_normal.png");
+					$(".sel img").attr("src","img/shopping_btn_normal.png")
+				}else{
+					$(".sasi").addClass("sure").removeClass("choose");
+					$(".sasi").attr("src","img/shopping_btn_selected.png");
+					$(".sel img").attr("src","img/shopping_btn_selected.png")
+				}
+				$(".gotoPay span").text($(".sure").length);
+			})
+		</script>
+	</body>
+</html>

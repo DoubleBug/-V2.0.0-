@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>评价页</title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/evaluate.css"/>
+	</head>
+	<body>
+		<div class="login_title" style="position: fixed;top: 0;left: 0;width: 100%;z-index: 13;">
+		    <header class="text-center">
+		        <a id="go" href="javascript:void(0);" style="width:0.19rem;height:0.35rem;font-size:19px;position:absolute;top:0.26rem;left:0.24rem;">
+		            <img style="margin-top:0;width:0.19rem;height:0.35rem;display: block;" src="img/arrow-back .png">
+		        </a>
+		        <h1 class="all_xl" style="margin:0;padding:0;font-size:0.36rem;font-weight:500;height:0.88rem;line-height:46px;color: #222;"><span>评价</span></h1>
+		    </header>
+		    <input type="hidden" id="basePath" value="">
+		    <input type="hidden" id="vip" value="0">
+		</div>
+		<section style="margin-top: 0.88rem;">
+			<div class="commodity">
+				<img class="showImg" src="img/00.jpg"/>
+				<div class="commodity_describtion">
+					<span>马瑞丽蓄电池es系列46b24rs202瑞丽蓄电池瑞丽蓄瑞丽蓄电池瑞丽蓄瑞丽…</span>
+					<span>hd5000 青花</span>
+				</div>
+			</div>
+			<div class="pingjia">
+				<ul class="xing">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<div class="addpingjia">
+					<div class="calc">
+						<span>添加评价</span>
+						<span>0/45</span>
+					</div>
+					<textarea class="inp" name="" rows="" onfocus="ss=setInterval(sp,300)" onblur="clearInterval(ss)" cols="" maxlength="45" placeholder="说说你对这件商品的评价吧"></textarea>
+					<!--input-group start-->
+		            <div class="input-group row">
+		                <div class="col-sm-9 big-photo">
+		                	<div class="preview">
+		                        <img class="imghead" border="0" src="img/common_assess_btn_normal@2x.png" onclick="$(this).parent().parent().find('.previewImg').click();">
+		                    	<!--<img class="close" src="img/assess_btn_delete.png" />-->
+		                	</div>         
+		                    <input type="file" onchange="previewImage(this,0)" style="display: none;" class="previewImg">
+		                	<!--<input id="uploaderInput" class="uploader__input" style="display: none;" type="file" accept="" multiple="">-->
+		                </div>
+		            </div>
+		            <!--input-group end-->
+		            <!--input-group start-->
+		            <div class="input-group row" style="display: none;">
+		                <div class="col-sm-9 big-photo">
+		                	<div class="preview">
+		                        <img class="imghead" border="0" src="img/common_assess_btn_normal@2x.png" onclick="$(this).parent().parent().find('.previewImg').click();">
+		                     	<!--<img class="close" src="img/assess_btn_delete.png" />-->
+		                	</div>         
+		                    <input type="file" onchange="previewImage(this,1)" style="display: none;" class="previewImg">
+		                	<!--<input id="uploaderInput" class="uploader__input" style="display: none;" type="file" accept="" multiple="">-->
+		                </div>
+		            </div>
+		            <!--input-group end-->
+					<!--input-group start-->
+		            <div class="input-group row" style="display: none;">
+		                <div class="col-sm-9 big-photo">
+		                	<div class="preview">
+		                        <img class="imghead" border="0" src="img/common_assess_btn_normal@2x.png" onclick="$(this).parent().parent().find('.previewImg').click();">
+		                    	<!--<img class="close" src="img/assess_btn_delete.png" />-->
+		                	</div>         
+		                    <input type="file" onchange="previewImage(this,2)" style="display: none;" class="previewImg">
+		                	<!--<input id="uploaderInput" class="uploader__input" style="display: none;" type="file" accept="" multiple="">-->
+		                </div>
+		            </div>
+		            <!--input-group end-->
+
+				</div>
+				
+			</div>
+		</section>
+		<button class="btn">发表评价</button>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//评星
+			var oBox=document.getElementsByClassName("xing")[0];
+			var aLi=oBox.getElementsByTagName("li");
+			var clickIndex=-10000;
+			for(var i=0;i<aLi.length;i++){
+				//建立索引值
+				aLi[i].index=i;
+				//给每一个li添加鼠标移上事件
+				aLi[i].onmouseover=function(){
+					//防止之前的效果的干扰，统一先清空一下
+					for(var i=0;i<aLi.length;i++){
+						aLi[i].style.background="url(img/assess_star_normal@2x.png)";
+						aLi[i].style.backgroundSize = "100% 100%"
+					}
+				
+					for(var i=0;i<=this.index;i++){
+							aLi[i].style.background="url(img/assess_star_selected.png)";
+							aLi[i].style.backgroundSize = "100% 100%"
+					}
+					
+				}
+				//给每一个li添加对应点击事件
+				aLi[i].onclick=function(){//1
+					clickIndex=this.index;//点击的是哪个li，将对应索引值记录给clickIndex，存起来
+				}
+				
+				
+			}
+			
+			//计算评论字数
+			function sp(){
+			var tex = $('.inp').val();
+//			console.log(tex)
+			var nun =tex.length;
+			var spa = $('.calc span:last-child');
+			spa.text(nun+'/45');
+			}
+			
+			
+			//上传图片
+			//图片上传预览    IE是用了滤镜。
+        function previewImage(file,i)
+        {
+          var MAXWIDTH  = 90; 
+          var MAXHEIGHT = 90;
+          var div = document.getElementsByClassName('preview')[i];
+          if (file.files && file.files[0])
+          {
+              div.innerHTML ='<img class=imghead><img class="close" src="img/assess_btn_delete.png" />';
+              var img = document.getElementsByClassName('imghead')[i];
+              img.onload = function(){
+                var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+                img.width  =  rect.width;
+                img.height =  rect.height;
+//                 img.style.marginLeft = rect.left+'px';
+//              img.style.marginTop = rect.top+'px';
+              }
+              var reader = new FileReader();
+              reader.onload = function(evt){img.src = evt.target.result;}
+              reader.readAsDataURL(file.files[0]);
+          }
+          else //兼容IE
+          {
+            var sFilter='filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src="';
+            file.select();
+            var src = document.selection.createRange().text;
+            div.innerHTML = '<img class=imghead>';
+            var img = document.getElementsByClassName('imghead')[i];
+            img.filters.item('DXImageTransform.Microsoft.AlphaImageLoader').src = src;
+            var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+            status =('rect:'+rect.top+','+rect.left+','+rect.width+','+rect.height);
+            div.innerHTML = "<div class=divhead style='width:"+rect.width+"px;height:"+rect.height+"px;"+rect.top+"px;"+sFilter+src+"\"'></div>";
+          }
+          if($(".imghead").eq(i).attr("src")!="img/common_assess_btn_normal@2x.png"){
+        	$(".imghead").eq(i).css({
+        		"margin":"0",
+        		"width":"1.32rem",
+        		"height":"1.32rem"
+        	})
+        	if(i<2){
+        		$(".input-group").eq(i+1).show();
+        	}
+        }
+         //图片关闭按钮
+			$(".close").eq(i).click(function(){
+//				console.log(r)
+				if(i==2){
+					$(".imghead").eq(i).removeAttr("style");
+					$(".imghead").eq(i).attr("src","img/common_assess_btn_normal@2x.png")
+					$(".imghead").eq(i).attr("onclick","$(this).parent().parent().find('.previewImg').click()")
+					$(this).remove()
+				}
+				if(i==1&&$(".close").length==3){
+					$(".imghead").eq(i).attr("src",$(".imghead").eq(i+1).attr("src"))
+					$(".imghead").eq(i+1).attr("src","img/common_assess_btn_normal@2x.png");
+					$(".imghead").eq(i+1).removeAttr("style");
+					$(".imghead").eq(i+1).attr("onclick","$(this).parent().parent().find('.previewImg').click()")
+					$(".close").eq(2).hide().remove();
+				}else if(i==1&&$(".close").length==2){
+					$(".imghead").eq(i).removeAttr("style");
+					$(".imghead").eq(i).attr("src","img/common_assess_btn_normal@2x.png")
+					$(".imghead").eq(i).attr("onclick","$(this).parent().parent().find('.previewImg').click()")
+					$(this).remove()
+					$(".input-group").eq(i+1).hide()
+				}
+				if(i==0&&$(".close").length==3){
+					$(".imghead").eq(i).attr("src",$(".imghead").eq(i+1).attr("src"))
+					$(".imghead").eq(i+1).attr("src",$(".imghead").eq(i+2).attr("src"))
+					$(".imghead").eq(i+2).attr("src","img/common_assess_btn_normal@2x.png");
+					$(".imghead").eq(i+2).removeAttr("style");
+					$(".imghead").eq(2).attr("onclick","$(this).parent().parent().find('.previewImg').click()")
+					$(".close").eq(2).hide().remove();
+				}else if(i==0&&$(".close").length==2){
+					$(".imghead").eq(i).attr("src",$(".imghead").eq(i+1).attr("src"));
+					$(".imghead").eq(i+1).attr("src","img/common_assess_btn_normal@2x.png");
+					$(".imghead").eq(i+1).removeAttr("style");
+					$(".imghead").eq(1).attr("onclick","$(this).parent().parent().find('.previewImg').click()")
+					$(".close").eq(1).hide().remove();
+					
+					$(".input-group").eq(2).hide()
+				}else if(i==0&&$(".close").length==1){
+					$(".imghead").eq(0).attr("src","img/common_assess_btn_normal@2x.png");
+					$(".imghead").eq(0).removeAttr("style");
+					$(this).remove()
+					$(".imghead").eq(0).attr("onclick","$(this).parent().parent().find('.previewImg').click()")
+					$(".input-group").eq(1).hide();
+				}
+			})
+        }
+        function clacImgZoomParam( maxWidth, maxHeight, width, height ){
+            var param = {top:0, left:0, width:width, height:height};
+            if( width>maxWidth || height>maxHeight ){
+                rateWidth = width / maxWidth;
+                rateHeight = height / maxHeight;
+                
+                if( rateWidth > rateHeight ){
+                    param.width =  maxWidth;
+                    param.height = Math.round(height / rateWidth);
+                }else{
+                    param.width = Math.round(width / rateHeight);
+                    param.height = maxHeight;
+                }
+            }
+            param.left = Math.round((maxWidth - param.width) / 2);
+            param.top = Math.round((maxHeight - param.height) / 2);
+            return param;
+        }
+        
+        //发表评论按钮
+        $(".xing li").click(function(){
+        	$(".btn").css("background","#FF5348")
+        })
+        
+		</script>
+	</body>
+</html>

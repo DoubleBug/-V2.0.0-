@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>子订单详情</title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/orderDetailChildren.css"/>
+	</head>
+	<body>
+		<div class="login_title" style="position: fixed;top: 0;left: 0;width: 100%;z-index: 13;">
+		    <header class="text-center">
+		        <a id="go" href="javascript:void(0);" style="width:0.19rem;height:0.35rem;font-size:19px;position:absolute;top:0.26rem;left:0.24rem;">
+		            <img style="margin-top:0;width:0.19rem;height:0.35rem;display: block;" src="img/arrow-back .png">
+		        </a>
+		        <h1 class="all_xl" style="margin:0;padding:0;font-size:0.36rem;font-weight:500;height:0.88rem;line-height:46px;color: #222;"><span>子订单详情</span></h1>
+		    </header>
+		    <input type="hidden" id="basePath" value="">
+		    <input type="hidden" id="vip" value="0">
+		</div>
+		<section style="margin-top: 0.88rem;margin-bottom: 1.32rem;">
+		<div class="banner">
+			<span>卖家已发货</span>
+			<span>宝贝已在路上,请您耐心等待~</span>
+		</div>
+		<div class="banner bufen">
+			<span>部分收货</span>
+			<span>如有问题，可以联系客服呦~</span>
+		</div>
+		<div class="banner bufens">
+			<span>交易成功</span>
+			<span>说说那里满意，帮大家选择</span>
+		</div>
+		<div class="banner bufenss">
+			<span>待卖家审核</span>
+			<span>如有问题，可以联系客服呦~</span>
+		</div>
+		<div class="banner bufensss">
+			<span>待卖家发货</span>
+			<span>卖家正在准备发货，请耐心等待~</span>
+		</div>
+		<div class="top">
+			<div class="order">
+				<div class="order_lef">
+					<span>子订单号</span>
+					<span>DD110103030170</span>
+				</div>
+				<div class="order_rig">
+					<span>下单时间</span>
+					<span>2016-06-24  15:02</span>
+				</div>
+			</div>
+			<img class="absolute" src="img/back_img_closed@2x.png"/>
+		</div>
+		<div class="blank"></div>
+		<div class="addressOrder">
+			<img src="img/common_ico_address.png"/>
+			<div class="addressOrderDatail">
+				<span>张小小   18312107565</span>
+				<span>北京市 朝阳区 石各庄路 史各庄乡村委会大院 五方汽配800分部史各庄村99号</span>
+			</div>
+		</div>
+		<div class="blank"></div>
+		<div class="thisBox_child">
+			<div class="carType_xl_top">
+				<div class="carType_xl_top_fir">
+					<img src="img/common_list_ico_models copy@2x.png"/>
+					<span>奥迪 a6l 2014款 2.8fsi 双离合 35fsi quattro豪华版</span>
+				</div>
+				<div class="carType_xl_top_second">
+					询价单号：xj201611091629668976
+				</div>
+			</div>
+			<div class="content_xl">
+				<img class="this_img" src="img/00.jpg"/>
+				<div class="content_xl_rig">
+					<span class="firName">马瑞丽蓄电池es系列46b24rs202丽蓄电瑞丽蓄电池瑞丽蓄瑞丽蓄丽蓄…</span>
+					<span class="secNum">oem: 447260-1893 </span>
+					<span class="thirPri">¥2880.00 x9 <span>原厂</span></span>
+				</div>
+			</div>
+			<div class="blank"></div>
+			<div class="otherMess">
+				<div class="peis">
+					<span class="showState">配送情况</span>
+					<ul>
+						<li>
+							<span class="state">待发</span>
+							<span class="num">0</span>
+						</li>
+						<li>
+							<span class="state">待收</span>
+							<span class="num">3</span>
+						</li>
+						<li>
+							<span class="state">已收</span>
+							<span class="num">8</span>
+						</li>
+					</ul>
+				</div>
+				<div class="shouh">
+					<span class="showState">售后信息</span>
+					<ul>
+						<li>
+							<span class="state">退款</span>
+							<span class="num">0</span>
+						</li>
+						<li>
+							<span class="state">退货</span>
+							<span class="num">3</span>
+						</li>
+						<li>
+							<span class="state">换货</span>
+							<span class="num">8</span>
+						</li>
+					</ul>
+				</div>
+				<div class="yic">
+					<span class="showState">异常信息</span>
+					<ul>
+						<li>
+							<span class="state">拒收</span>
+							<span class="num">0</span>
+						</li>
+						<li>
+							<span class="state">丢失</span>
+							<span class="num">3</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="blank"></div>
+			<div class="messDetail">
+				<div class="tilt_top">
+					<span class="tile">发货信息：</span>
+				</div>
+				<div class="kuaidi">
+					<div class="youzheng">
+						<span class="kdName">中国邮政</span>
+						<span class="kdNum">398767155710 (2)</span>
+						
+						<img class="gowhere" src="img/list_right_arrow.png"/>
+						<span class="kdState">送货中</span>
+					</div>
+					<div class="tiantian">
+						<span class="kdName">天天快递</span>
+						<span class="kdNum">398767155710 (2)</span>
+						<img class="gowhere" src="img/list_right_arrow.png"/>
+						<span class="kdState">已收货</span>
+					</div>
+					<div class="yunda">
+						<span class="kdName">韵达快递</span>
+						<span class="kdNum">398767155710 (2)</span>
+						<img class="gowhere" src="img/list_right_arrow.png"/>
+						<span class="kdState">已收货</span>
+						<span class="kdwrong">异常</span>
+					</div>
+				</div>
+				
+			</div>
+			<div class="blank"></div>
+			<div class="messDetail">
+				<div class="tilt_top">
+					<span class="tile">退单信息：</span>
+				</div>
+				<div class="kuaidi">
+					<div class="youzheng">
+						<span class="kdName">TH2016098776638</span>
+						<span class="kdNum"> (退货2件)</span>
+						
+						<img class="gowhere" src="img/list_right_arrow.png"/>
+						<span class="kdState">审核中</span>
+					</div>
+					<div class="tiantian">
+						<span class="kdName">TH2016098776639</span>
+						<span class="kdNum"> (换货2件)</span>
+						<img class="gowhere" src="img/list_right_arrow.png"/>
+						<span class="kdState">审核中</span>
+					</div>
+					<div class="yunda">
+						<span class="kdName">TH2016098776648</span>
+						<span class="kdNum"> (退款2件)</span>
+						<img class="gowhere" src="img/list_right_arrow.png"/>
+						<span class="kdState">已退款</span>
+						<span class="kdwrong">异常</span>
+					</div>
+				</div>
+				
+			</div>
+			<div class="blank"></div>
+			<div class="realDetail realDetails">
+				<div class="wayTransport">
+					<span>配送方式：</span>
+					<span>千品猫快递</span>
+				</div>
+				<div class="totalAmount">
+					<div class="totalPrice">
+						<span>发票类型：</span>
+						<span>普通发票</span>
+					</div>
+					<div class="totalAmount1">
+						<span>内容：</span>
+						<span>明细</span>
+					</div>
+					<div class="totalAmount2">
+						<span>抬头：</span>
+						<span>北京千品猫科技有限公司</span>
+					</div>
+					<div class="leaveWords">
+						<span class="">卖家留言：</span>
+						<span>我是留言，留言是我。快来看我的留言，我的留言是留言是我的。</span>
+					</div>
+				</div>
+			</div>
+			<div class="blank"></div>
+			<div class="realDetail">
+				<div class="wayTransport">
+					<span>支付方式：</span>
+					<span>在线支付</span>
+				</div>
+				<div class="totalAmount">
+					<div class="totalPrice">
+						<span>商品总额：</span>
+						<span>¥99999.00</span>
+					</div>
+					<div class="totalAmount1">
+						<span>运费：</span>
+						<span>+ ¥0.00</span>
+					</div>
+					<div class="totalAmount2">
+						<span>积分：</span>
+						<span>- ¥0.00</span>
+					</div>
+					<div class="totalAmount3">
+						<span>优惠券：</span>
+						<span>- ¥0.00</span>
+					</div>
+					<div class="totalAmount4">
+						<span>手动优惠：</span>
+						<span>- ¥0.00</span>
+					</div>
+					<div class="totalAmount5">
+						<span>应付金额：</span>
+						<span>¥ 99948.50</span>
+					</div>
+				</div>
+				<div class="PayAmount">
+					<div class="PayAmount1">
+						<span>实付金额：</span>
+						<span>¥ 99860.00</span>
+					</div>
+					<div class="PayAmount2">
+						<span>商品总额：</span>
+						<span>2017.01.01  10:16</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		</section>	
+		<footer>
+			<div class="timerest timerests">
+				<!--<span class="timerests1">申请售后</span>
+				<span class="timerests2">申请退款</span>-->
+			</div>
+			<div class="cencelOrder">申请退款</div>
+			<div class="gotoPay">确认收货</div>
+		</footer>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

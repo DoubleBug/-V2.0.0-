@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>申请售后</title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/ApplyForAfterSale.css"/>
+		<link rel="stylesheet" type="text/css" href="css/qpmall_h5.css"/>
+	</head>
+	<body>
+		<div class="login_title" style="position: fixed;top: 0;left: 0;width: 100%;z-index: 13;">
+		    <header class="text-center">
+		        <a id="go" href="javascript:void(0);" style="width:0.19rem;height:0.35rem;font-size:19px;position:absolute;top:0.26rem;left:0.24rem;">
+		            <img style="margin-top:0;width:0.19rem;height:0.35rem;display: block;" src="img/arrow-back .png">
+		        </a>
+		        <h1 class="all_xl" style="margin:0;padding:0;font-size:0.36rem;font-weight:500;height:0.88rem;line-height:46px;color: #222;"><span>申请售后</span></h1>
+		    </header>
+		    <input type="hidden" id="basePath" value="">
+		    <input type="hidden" id="vip" value="0">
+		</div>
+		<section style="margin-top: 0.88rem;margin-bottom: 1.32rem;">
+			<div class="topTitle">
+				<div class="left">
+					<span class="wordstyle">退货</span>
+				</div>
+				<div class="right">
+					<span>退款</span>
+				</div>
+			</div>
+			<div class="blank"></div>
+			<div class="tuihuo">
+				<div class="content_xl">
+					<img class="thire sasi choose" src="img/shopping_btn_normal.png"/>
+					<img class="this_img" src="img/00.jpg"/>
+					<div class="content_xl_rig">
+						<div class="contentBox">
+							<span class="firName">马瑞丽蓄电池es系列46b24rs202丽蓄电瑞丽蓄电池瑞丽蓄瑞丽蓄丽蓄…</span>
+							<!--<span class="secNum">oem:8422-6565</span>-->
+							<span class="secNum descr">HD5000  青花</span>
+						</div>
+						<span class="thirPri"><span class="money">¥2880.00</span>&nbsp;&nbsp;<span class="how">(9件可退)</span></span>
+					</div>
+					<div class="addOrReduce">
+						<span class="add">+</span>
+						<span class="count">1</span>
+						<span class="reduce">-</span>
+					</div>
+				</div>
+				<div class="blank"></div>
+				<div class="content_xl">
+					<img class="thire sasi choose" src="img/shopping_btn_normal.png"/>
+					<img class="this_img" src="img/00.jpg"/>
+					<div class="content_xl_rig">
+						<div class="contentBox">
+							<span class="firName">马瑞丽蓄电池es系列46b24rs202丽蓄电瑞丽蓄电池瑞丽蓄瑞丽蓄丽蓄…</span>
+							<span class="secNum">oem:8422-6565</span>
+							<!--<span class="secNum descr">HD5000  青花</span>-->
+						</div>
+						<span class="thirPri"><span class="money">¥2880.00</span>&nbsp;&nbsp;<span class="how">(9件可退)</span></span>
+					</div>
+					<div class="addOrReduce">
+						<span class="add">+</span>
+						<span class="count">1</span>
+						<span class="reduce">-</span>
+					</div>
+				</div>
+				<div class="blank"></div>
+				<div class="content_xl">
+					<img class="thire sasi choose" src="img/shopping_btn_normal.png"/>
+					<img class="this_img" src="img/00.jpg"/>
+					<div class="content_xl_rig">
+						<div class="contentBox">
+							<!--<span class="firName">马瑞丽蓄电池es系列46b24rs202丽蓄电瑞丽蓄电池瑞丽蓄瑞丽蓄丽蓄…</span>-->
+							<span class="secNum">oem:8422-6565</span>
+							<!--<span class="secNum descr">HD5000  青花</span>-->
+						</div>
+						<span class="thirPri"><span class="money">¥2880.00</span>&nbsp;&nbsp;<span class="how">(9件可退)</span></span>
+					</div>
+					<div class="addOrReduce">
+						<span class="add">+</span>
+						<span class="count">1</span>
+						<span class="reduce">-</span>
+					</div>
+				</div>
+				<div class="blank"></div>
+				<div class="fileBlank">
+					<div class="select">
+						<span class="words">取消原因</span>
+						<select name="">
+							<option value="">未选择</option>
+						</select>
+					</div>
+					<div class="textarea">
+						<span class="cencelDescr">取消说明</span>
+						<textarea class="inp" name="" rows="3" onfocus="ss=setInterval(sp,300)" onblur="clearInterval(ss)" cols="" maxlength="45" placeholder="请详细描述你的问题"></textarea>
+						<span class="wordNum">0/45</span>
+					</div>
+					<div class="picture">
+						<span class="cencelDescr">添加凭证</span>
+						<span class="two">最多可以上传10张图片</span>
+						<br style="display: none;" />
+						<!--input-group start-->
+			            <div class="input-group row">
+			                <div class="col-sm-9 big-photo">
+			                	<div class="preview">
+			                        <img class="imghead" border="0" src="img/common_assess_btn_normal@2x.png" onclick="$(this).parent().parent().find('.previewImg').click();">
+			                    	<!--<img class="close" src="img/assess_btn_delete.png" />-->
+			                	</div>         
+			                    <input type="file" onchange="previewImage(this,0)" style="display: none;" class="previewImg">
+			                	<!--<input id="uploaderInput" class="uploader__input" style="display: none;" type="file" accept="" multiple="">-->
+			                </div>
+			            </div>
+			            <!--input-group end-->
+			            <!--input-group start-->
+			            <div class="input-group row" style="display: none;">
+			                <div class="col-sm-9 big-photo">
+			                	<div class="preview">
+			                        <img class="imghead" border="0" src="img/common_assess_btn_normal@2x.png" onclick="$(this).parent().parent().find('.previewImg').click();">
+			                    	<!--<img class="close" src="img/assess_btn_delete.png" />-->
+			                	</div>         
+			                    <input type="file" onchange="previewImage(this,1)" style="display: none;" class="previewImg">
+			                	<!--<input id="uploaderInput" class="uploader__input" style="display: none;" type="file" accept="" multiple="">-->
+			                </div>
+			            </div>
+			            <!--input-group end-->
+			            <!--input-group start-->
+			            <div class="input-group row" style="display: none;">
+			                <div class="col-sm-9 big-photo">
+			                	<div class="preview">
+			                        <img class="imghead" border="0" src="img/common_assess_btn_normal@2x.png" onclick="$(this).parent().parent().find('.previewImg').click();">
+			                    	<!--<img class="close" src="img/assess_btn_delete.png" />-->
+			                	</div>         
+			                    <input type="file" onchange="previewImage(this,2)" style="display: none;" class="previewImg">
+			                	<!--<input id="uploaderInput" class="uploader__input" style="display: none;" type="file" accept="" multiple="">-->
+			                </div>
+			            </div>
+			            <!--input-group end-->
+			            <!--input-group start-->
+			            <div class="input-group row" style="display: none;">
+			                <div class="col-sm-9 big-photo">
+			                	<div class="preview">
+			                        <img class="imghead" border="0" src="img/common_assess_btn_normal@2x.png" onclick="$(this).parent().parent().find('.previewImg').click();">
+			                    	<!--<img class="close" src="img/assess_btn_delete.png" />-->
+			                	</div>         
+			                    <input type="file" onchange="previewImage(this,3)" style="display: none;" class="previewImg">
+			                	<!--<input id="uploaderInput" class="uploader__input" style="display: none;" type="file" accept="" multiple="">-->
+			                </div>
+			            </div>
+			            <!--input-group end-->
+			            <!--input-group start-->
+			            <div class="input-group row" style="display: none;">
+			                <div class="col-sm-9 big-photo">
+			                	<div class="preview">
+			                        <img class="imghead" border="0" src="img/common_assess_btn_normal@2x.png" onclick="$(this).parent().parent().find('.previewImg').click();">
+			                    	<!--<img class="close" src="img/assess_btn_delete.png" />-->
+			                	</div>         
+			                    <input type="file" onchange="previewImage(this,4)" style="display: none;" class="previewImg">
+			                	<!--<input id="uploaderInput" class="uploader__input" style="display: none;" type="file" accept="" multiple="">-->
+			                </div>
+			            </div>
+			            <!--input-group end-->
+			            <!--input-group start-->
+			            <div class="input-group row" style="display: none;">
+			                <div class="col-sm-9 big-photo">
+			                	<div class="preview">
+			                        <img class="imghead" border="0" src="img/common_assess_btn_normal@2x.png" onclick="$(this).parent().parent().find('.previewImg').click();">
+			                    	<!--<img class="close" src="img/assess_btn_delete.png" />-->
+			                	</div>         
+			                    <input type="file" onchange="previewImage(this,5)" style="display: none;" class="previewImg">
+			                	<!--<input id="uploaderInput" class="uploader__input" style="display: none;" type="file" accept="" multiple="">-->
+			                </div>
+			            </div>
+			            <!--input-group end-->
+			            <!--input-group start-->
+			            <div class="input-group row" style="display: none;">
+			                <div class="col-sm-9 big-photo">
+			                	<div class="preview">
+			                        <img class="imghead" border="0" src="img/common_assess_btn_normal@2x.png" onclick="$(this).parent().parent().find('.previewImg').click();">
+			                    	<!--<img class="close" src="img/assess_btn_delete.png" />-->
+			                	</div>         
+			                    <input type="file" onchange="previewImage(this,6)" style="display: none;" class="previewImg">
+			                	<!--<input id="uploaderInput" class="uploader__input" style="display: none;" type="file" accept="" multiple="">-->
+			                </div>
+			            </div>
+			            <!--input-group end-->
+			            <!--input-group start-->
+			            <div class="input-group row" style="display: none;">
+			                <div class="col-sm-9 big-photo">
+			                	<div class="preview">
+			                        <img class="imghead" border="0" src="img/common_assess_btn_normal@2x.png" onclick="$(this).parent().parent().find('.previewImg').click();">
+			                    	<!--<img class="close" src="img/assess_btn_delete.png" />-->
+			                	</div>         
+			                    <input type="file" onchange="previewImage(this,7)" style="display: none;" class="previewImg">
+			                	<!--<input id="uploaderInput" class="uploader__input" style="display: none;" type="file" accept="" multiple="">-->
+			                </div>
+			            </div>
+			            <!--input-group end-->
+			            <!--input-group start-->
+			            <div class="input-group row" style="display: none;">
+			                <div class="col-sm-9 big-photo">
+			                	<div class="preview">
+			                        <img class="imghead" border="0" src="img/common_assess_btn_normal@2x.png" onclick="$(this).parent().parent().find('.previewImg').click();">
+			                    	<!--<img class="close" src="img/assess_btn_delete.png" />-->
+			                	</div>         
+			                    <input type="file" onchange="previewImage(this,8)" style="display: none;" class="previewImg">
+			                	<!--<input id="uploaderInput" class="uploader__input" style="display: none;" type="file" accept="" multiple="">-->
+			                </div>
+			            </div>
+			            <!--input-group end-->
+			            <!--input-group start-->
+			            <div class="input-group row" style="display: none;">
+			                <div class="col-sm-9 big-photo">
+			                	<div class="preview">
+			                        <img class="imghead" border="0" src="img/common_assess_btn_normal@2x.png" onclick="$(this).parent().parent().find('.previewImg').click();">
+			                    	<!--<img class="close" src="img/assess_btn_delete.png" />-->
+			                	</div>         
+			                    <input type="file" onchange="previewImage(this,9)" style="display: none;" class="previewImg">
+			                	<!--<input id="uploaderInput" class="uploader__input" style="display: none;" type="file" accept="" multiple="">-->
+			                </div>
+			            </div>
+			            <!--input-group end-->
+			            <div style="clear: both;"></div>
+					</div>
+					
+					<div style="clear: both;"></div>
+				</div>
+				<div class="blank"></div>
+				<div class="wl_xl">
+					<span class="line"></span>
+					<span>退货物流</span>
+				</div>
+				<div class="check">
+					<ul>
+						<li class="jiao">快递寄回</li>
+						<li>班车自提</li>
+						<li>到店退货</li>
+					</ul>
+				</div>
+				<div class="blank"></div>
+				<div class="wl_xl">
+					<span class="line"></span>
+					<span>商家地址</span>
+					<span class="chosse">选择地址</span>
+				</div>
+				<div class="check">
+					<div class="person">
+						<span>千小品</span>
+						<span>18060668686</span>
+					</div>
+					<div class="address">
+						北京市 朝阳区 石各庄路 史各庄乡村委会大院 五方汽配广场
+					</div>
+					<div class="lxren">
+						<span>联系人</span>
+						<input type="text" name="" id="" value="千小品" />
+					</div>
+					<div class="sjhao">
+						<span>手机号</span>
+						<input type="text" name="" id="" value="18060668686" />
+					</div>
+				</div>
+			</div>
+			<div class="blank"></div>
+			<div class="checked">
+				<div class="checkTime">
+					<span class="first">取货时间</span>
+					<span class="thired">上午</span>
+					<span class="second">2017-02-09</span>
+				</div>
+			</div>
+			<div class="shuoming">
+				<span>如果您申请取消订单，千品猫将不再安排配送，如有疑问请与客服联系。电话  <i>400-876599</i></span>
+			</div>
+		</section>	
+		<footer>
+			<div class="sel">
+				<img src="img/shopping_btn_normal.png"/>
+				<span>全选</span>
+				<span class="red"><span>应退：</span><span>¥<i style="font-style: normal;" class="totalmoney">0</i></span></span>
+			</div>
+			<div class="gotoPay">确定(<span>0</span>)</div>
+		</footer>
+		<div class="pc order j_three" id="j_three">
+			<!--title-->
+			<div class="j_title">
+				<img class="j_comeback" src="img/nav_arrow_back@3x.png" id="j_comeOrder4"/>
+				<span class="j_car">选择自提点</span>
+			</div>
+			<div class="copyTitle"></div>
+			<!--自提点1-->
+			<div class="jsf_box j_xxl" id="j_selfAdd1">
+				<span class="jsfb_lt1"></span>
+				<span class="jsfb_lt2">自提点1地址</span>
+				<span class="jsfb_lt3">北京市 朝阳区石各庄路99号 长久大厦</span>
+				<span class="jsfb_lt4 active"></span>
+			</div>
+			
+			<!--自提点2-->
+			<div class="jsf_box2 j_xxl" id="j_selfAdd2">
+				<span class="jsfb_lt1"></span>
+				<span class="jsfb_lt2">自提点2地址</span>
+				<span class="jsfb_lt3">北京市 朝阳区石各庄路99号 长久大厦旁五方汽配中心</span>
+				<span class="jsfb_lt4"></span>
+			</div>
+			<!--自提点3-->
+			<div class="jsf_box3 j_xxl" id="j_selfAdd3">
+				<span class="jsfb_lt1"></span>
+				<span class="jsfb_lt2">自提点3地址</span>
+				<span class="jsfb_lt3">北京市 朝阳区石各庄路99号 长久大厦北京市 朝阳区石各庄路99号 长久大厦朝阳区石各庄路99号</span>
+				<span class="jsfb_lt4"></span>
+			</div>
+			
+			<!--点击确定-->
+			<div class="jy_sure" id="j_myself">确定</div>
+		</div>
+
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//计算评论字数
+			function sp(){
+			var tex = $('.inp').val();
+//			console.log(tex)
+			var nun =tex.length;
+			var spa = $('.wordNum');
+			spa.text(nun+'/45');
+			}
+			
+			//上传图片
+			//图片上传预览    IE是用了滤镜。
+        function previewImage(file,i)
+        {
+          var MAXWIDTH  = 90; 
+          var MAXHEIGHT = 90;
+          var div = document.getElementsByClassName('preview')[i];
+          if (file.files && file.files[0])
+          {
+              div.innerHTML ='<img class=imghead><img class="close" src="img/assess_btn_delete.png" />';
+              var img = document.getElementsByClassName('imghead')[i];
+              img.onload = function(){
+                var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+                img.width  =  rect.width;
+                img.height =  rect.height;
+//                 img.style.marginLeft = rect.left+'px';
+//              img.style.marginTop = rect.top+'px';
+              }
+              var reader = new FileReader();
+              reader.onload = function(evt){img.src = evt.target.result;}
+              reader.readAsDataURL(file.files[0]);
+          }
+          else //兼容IE
+          {
+            var sFilter='filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src="';
+            file.select();
+            var src = document.selection.createRange().text;
+            div.innerHTML = '<img class=imghead>';
+            var img = document.getElementsByClassName('imghead')[i];
+            img.filters.item('DXImageTransform.Microsoft.AlphaImageLoader').src = src;
+            var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+            status =('rect:'+rect.top+','+rect.left+','+rect.width+','+rect.height);
+            div.innerHTML = "<div class=divhead style='width:"+rect.width+"px;height:"+rect.height+"px;"+rect.top+"px;"+sFilter+src+"\"'></div>";
+          }
+          if($(".imghead").eq(i).attr("src")!="img/common_assess_btn_normal@2x.png"){
+        	$(".imghead").eq(i).css({
+        		"margin":"0",
+        		"width":"1.32rem",
+        		"height":"1.32rem"
+        	})
+        	if(i<9){
+        		$(".input-group").eq(i+1).show();
+        	}
+        }
+          $(".input-group").css({"float":"left","marginRight": 0,"marginTop": 0});
+          
+         //图片关闭按钮
+			$(".close").eq(i).click(function(){
+				if($(".close").length>0&&$(".close").length<10){
+					for(var j=i;j<$(".close").length;j++){
+						$(".imghead").eq(j).attr("src",$(".imghead").eq(j+1).attr("src"));
+					}
+					$(".imghead").eq($(".close").length).attr("onclick","$(this).parent().parent().find('.previewImg').click();")
+					$(".close").eq($(".close").length-1).hide().remove()
+					$(".input-group").eq($(".close").length).hide();
+//					$(".input-group").eq($(".close").length-1).removeAttr("style")
+				}
+				if(i==9){
+					$(".imghead").eq(i).attr("src","img/common_assess_btn_normal@2x.png");
+					$(".input-group").eq($(".close").length).hide();
+					$(".imghead").eq(i).removeAttr("style");
+					$(this).hide().remove()
+					$(".imghead").eq(9).attr("onclick","$(this).parent().parent().find('.previewImg').click();")
+				}
+				if($(".close").length==10&&i!=9){
+					for(var j=i;j<$(".close").length;j++){
+						$(".imghead").eq(j).attr("src",$(".imghead").eq(j+1).attr("src"));
+					}
+					$(".close").eq($(".close").length-1).hide().remove()
+					$(".imghead").eq(9).attr("src","img/common_assess_btn_normal@2x.png");
+					$(".imghead").eq(9).attr("onclick","$(this).parent().parent().find('.previewImg').click();")
+//					$(".input-group").eq($(".close").length).hide();
+					$(".imghead").eq(9).removeAttr("style");
+					$(".close").eq(9).hide().remove()
+				}
+				
+			})
+        }
+        function clacImgZoomParam( maxWidth, maxHeight, width, height ){
+            var param = {top:0, left:0, width:width, height:height};
+            if( width>maxWidth || height>maxHeight ){
+                rateWidth = width / maxWidth;
+                rateHeight = height / maxHeight;
+                
+                if( rateWidth > rateHeight ){
+                    param.width =  maxWidth;
+                    param.height = Math.round(height / rateWidth);
+                }else{
+                    param.width = Math.round(width / rateHeight);
+                    param.height = maxHeight;
+                }
+            }
+            param.left = Math.round((maxWidth - param.width) / 2);
+            param.top = Math.round((maxHeight - param.height) / 2);
+            return param;
+        }
+        $(".imghead").click(function(){
+        	$(".two").remove();
+        	$("br").show()
+        })
+        $(".check ul li").click(function(){
+        	$(this).addClass("jiao").siblings().removeClass("jiao")
+        })
+        $(".chosse").click(function(){
+        	$(".j_three").show();
+        	$("body").css("overflow","hidden");
+        })
+        $(".jsfb_lt4").each(function(){
+        	$(this).click(function(){
+	        	$(this).addClass("active").parent().siblings().find(".jsfb_lt4").removeClass("active");
+	        })
+        })
+        $(".jy_sure").click(function(){
+        	var aa = $(".j_xxl").find(".active").parent().find(".jsfb_lt3").text();
+        	$(".j_three").hide();
+        	$("body").css("overflow-y","auto");
+        	console.log($(".j_xxl").find(".active").parent().find(".jsfb_lt3").text());
+        	$(".check .address").text(aa);
+        })
+        var totalmoney = Number($(".totalmoney").text());
+        $(".sasi").click(function(){
+        	var begin = 0;
+				if($(this).hasClass("choose")){
+					$(this).addClass("sure").removeClass("choose");
+					$(this).attr("src","img/shopping_btn_selected.png");
+					//总价赋初始值
+					$(".sure").each(function(){
+						begin += Number($(this).siblings().find(".add").parent().parent().find(".content_xl_rig").find(".money").text().substr(1))
+					})
+//					var begin = Number($(this).siblings().find(".add").parent().parent().find(".content_xl_rig").find(".money").text().substr(1))
+//					$(".totalmoney").text(begin)
+					//加
+					$(this).siblings().find(".add").click(function(){
+		        		var x = Number($(this).parent().find(".count").text())
+		//      		console.log(x)
+		        		x++;
+		        		$(this).parent().find(".count").text(x);
+		        		var money = Number($(this).parent().parent().find(".content_xl_rig").find(".money").text().substr(1));
+		        		console.log(x*money)
+		        	})
+					$(".totalmoney").text(begin)
+				}else{
+					$(this).addClass("choose").removeClass("sure");
+					$(this).attr("src","img/shopping_btn_normal.png");
+					$(".sure").each(function(){
+						begin += Number($(this).siblings().find(".add").parent().parent().find(".content_xl_rig").find(".money").text().substr(1))
+					})
+					$(".totalmoney").text(begin)
+				}
+				$(".gotoPay span").text($(".sure").length);
+				if($(".sure").length==$(".content_xl").length){
+					$(".sel img").attr("src","img/shopping_btn_selected.png");
+				}else{
+					$(".sel img").attr("src","img/shopping_btn_normal.png");
+				}
+			})
+        $(".sel img").click(function(){
+				if($(".sel img").attr("src")=="img/shopping_btn_selected.png"){
+					$(".sasi").addClass("choose").removeClass("sure");
+					$(".sasi").attr("src","img/shopping_btn_normal.png");
+					$(".sel img").attr("src","img/shopping_btn_normal.png")
+				}else{
+					$(".sasi").addClass("sure").removeClass("choose");
+					$(".sasi").attr("src","img/shopping_btn_selected.png");
+					$(".sel img").attr("src","img/shopping_btn_selected.png")
+				}
+				$(".gotoPay span").text($(".sure").length);
+			})
+        	
+        	
+        	$(".reduce").click(function(){
+        		var x = Number($(this).parent().find(".count").text())
+//      		console.log(x)
+        		if(x>0){
+        			x--;
+        		}
+        		$(this).parent().find(".count").text(x);
+        		var money = Number($(this).parent().parent().find(".content_xl_rig").find(".money").text().substr(1));
+        		
+        	})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/order.css"/>
+    <title>订单列表</title>
+</head>
+<body>
+	<div class="login_title" style="position: fixed;top: 0;left: 0;width: 100%;z-index: 13;">
+	    <header class="text-center">
+	        <a id="go" href="javascript:void(0);" style="width:0.19rem;height:0.35rem;font-size:19px;position:absolute;top:0.26rem;left:0.24rem;">
+	            <img style="margin-top:0;width:0.19rem;height:0.35rem;display: block;" src="img/arrow-back .png">
+	        </a>
+	        <h1 class="all_xl" style="margin:0;padding:0;font-size:0.36rem;font-weight:500;height:0.88rem;line-height:46px;color: #222;"><span>全部</span><img src="img/nav_ico_more.png"/></h1>
+	    	<img class="sear_xl" src="img/nav_btn_search.png"/>
+	    </header>
+	    <input type="hidden" id="basePath" value="">
+	    <input type="hidden" id="vip" value="0">
+	</div>
+	<div class="blank" style="margin-top: 0.88rem;"></div>
+	<section>
+		<div class="qpmall">
+			<div class="title_xl">
+				<span class="line_xl"></span>
+				<span class="name_xl">千品猫<span>（27项）</span></span>
+				<img src="img/list_right_arrow.png"/>
+				<span class="price_xl">¥8990.00</span>
+			</div>
+			<div class="content_xl">
+				<img class="this_img" src="img/00.jpg"/>
+				<div class="content_xl_rig">
+					<span class="firName">马瑞丽蓄电池es系列46b24rs202丽蓄电瑞丽蓄电池瑞丽蓄瑞丽蓄丽蓄…</span>
+					<span class="secNum">OEM99999999</span>
+					<span class="thirPri">¥2880.00 x9</span>
+				</div>
+			</div>
+			<div class="content_xl">
+				<img class="this_img" src="img/00.jpg"/>
+				<div class="content_xl_rig">
+					<span class="firName">马瑞丽蓄电池es系列46b24rs202丽蓄电瑞丽蓄电池瑞丽蓄瑞丽蓄丽蓄…</span>
+					<span class="secNum">OEM99999999</span>
+					<span class="thirPri">¥2880.00 x9</span>
+				</div>
+			</div>
+			<div class="carType_xl">
+				<div class="carType_xl_top">
+					<div class="carType_xl_top_fir">
+						<img src="img/common_list_ico_models copy@2x.png"/>
+						<span>奥迪 a6l 2014款 2.8fsi 双离合 35fsi quattro豪华版</span>
+					</div>
+					<div class="carType_xl_top_second">
+						询价单号：xj201611091629668976
+					</div>
+				</div>
+				<div class="content_xl">
+					<img class="this_img" src="img/00.jpg"/>
+					<div class="content_xl_rig">
+						<span class="firName">马瑞丽蓄电池es系列46b24rs202丽蓄电瑞丽蓄电池瑞丽蓄瑞丽蓄丽蓄…</span>
+						<span class="secNum">VIN：LFV2A18E173027972</span>
+						<span class="thirPri">¥2880.00 x9 <span>原厂</span></span>
+					</div>
+				</div>
+				<div class="content_xl">
+					<img class="this_img" src="img/00.jpg"/>
+					<div class="content_xl_rig">
+						<span class="firName">马瑞丽蓄电池es系列46b24rs202丽蓄电瑞丽蓄电池瑞丽蓄瑞丽蓄丽蓄…</span>
+						<span class="secNum"></span>
+						<span class="thirPri">¥2880.00 x9 <span>原厂</span></span>
+					</div>
+				</div>
+			</div>
+			<div class="totalPri_xl">
+				<span class="show_all_xl">显示全部商品</span>
+				<img src="img/nav_ico_graymore@2x.png"/>
+				<div class="totalPri_xl_rig">
+					<span class="word">付款</span>
+					<span class="restTime">剩余 23:59:52</span>
+				</div>
+			</div>
+		</div>
+		<div class="blank"></div>
+		<div class="qpmall">
+			<div class="title_xl">
+				<span class="line_xl"></span>
+				<span class="name_xl">五方汽配中心<span>（9项）</span></span>
+				<img src="img/list_right_arrow.png"/>
+				<span class="price_xl">¥8990.00</span>
+			</div>
+			<div class="content_xl">
+				<img class="this_img" src="img/00.jpg"/>
+				<div class="content_xl_rig">
+					<span class="firName">马瑞丽蓄电池es系列46b24rs202丽蓄电瑞丽蓄电池瑞丽蓄瑞丽蓄丽蓄…</span>
+					<span class="secNum">OEM99999999</span>
+					<span class="thirPri">¥2880.00 x9</span>
+				</div>
+			</div>
+			<div class="content_xl">
+				<img class="this_img" src="img/00.jpg"/>
+				<div class="content_xl_rig">
+					<span class="firName">马瑞丽蓄电池es系列46b24rs202丽蓄电瑞丽蓄电池瑞丽蓄瑞丽蓄丽蓄…</span>
+					<span class="secNum">OEM99999999</span>
+					<span class="thirPri">¥2880.00 x9</span>
+				</div>
+			</div>
+			<div class="carType_xl">
+				<div class="carType_xl_top">
+					<div class="carType_xl_top_fir">
+						<img src="img/common_list_ico_code@2x.png"/>
+						<span>奥迪汽车</span>
+					</div>
+					<div class="carType_xl_top_second">
+						询价单号：xj201611091629668976
+					</div>
+				</div>
+				<div class="content_xl">
+					<img class="this_img" src="img/00.jpg"/>
+					<div class="content_xl_rig">
+						<span class="firName-OEM">oem：447260-1893 </span>
+						<span class="secNum_title">马瑞丽蓄电池es系列46b24rs202瑞丽蓄电池蓄马瑞丽蓄电池es系列46b24rs202瑞蓄…</span>
+						<span class="thirPri">¥2880.00 x9 <span>原厂</span></span>
+					</div>
+				</div>
+				<div class="content_xl">
+					<img class="this_img" src="img/00.jpg"/>
+					<div class="content_xl_rig">
+						<span class="firName-OEM">oem：447260-1893 </span>
+						<span class="secNum_title">马瑞丽蓄电池es系列46b24rs202瑞丽蓄电池蓄马瑞丽蓄电池es系列46b24rs202瑞蓄…</span>
+						<span class="thirPri">¥2880.00 x9 <span>原厂</span></span>
+					</div>
+				</div>
+			</div>
+			<div class="totalPri_xl">
+				<span class="show_all_xl">显示全部商品</span>
+				<img src="img/nav_ico_graymore@2x.png"/>
+				
+				<div class="totalPri_xl_rig sureOfMy">
+					确认收货
+				</div>
+				<div class="evaluate">
+					评价
+				</div>
+			</div>
+		</div>
+		<div class="blank"></div>
+		<!-----------------------------------------------------待发货------------------------------------------------------>
+		<div class="qpmall">
+			<div class="title_xl">
+				<span class="line_xl"></span>
+				<span class="name_xl">千品猫<span>（27项）</span></span>
+				<img src="img/list_right_arrow.png"/>
+				<span class="price_xl">¥8990.00</span>
+			</div>
+			<div class="content_xl">
+				<img class="this_img" src="img/00.jpg"/>
+				<div class="content_xl_rig">
+					<span class="firName">马瑞丽蓄电池es系列46b24rs202丽蓄电瑞丽蓄电池瑞丽蓄瑞丽蓄丽蓄…</span>
+					<span class="secNum">OEM99999999</span>
+					<span class="thirPri">¥2880.00 x9</span>
+				</div>
+			</div>
+			<div class="content_xl" style="border-bottom: none;">
+				<img class="this_img" src="img/00.jpg"/>
+				<div class="content_xl_rig">
+					<span class="firName">马瑞丽蓄电池es系列46b24rs202丽蓄电瑞丽蓄电池瑞丽蓄瑞丽蓄丽蓄…</span>
+					<span class="secNum">OEM99999999</span>
+					<span class="thirPri">¥2880.00 x9</span>
+				</div>
+			</div>
+			<div class="showmore">
+				显示全部商品
+			</div>
+		</div>
+		<div class="blank"></div>
+		<!------------------------------------------------待收货------------------------------------------------>
+		<div class="qpmall">
+			<div class="title_xl">
+				<span class="line_xl"></span>
+				<span class="name_xl">五方汽配中心<span>（9项）</span></span>
+				<img src="img/list_right_arrow.png"/>
+				<span class="price_xl">¥8990.00</span>
+			</div>
+			<div class="content_xl">
+				<img class="this_img" src="img/00.jpg"/>
+				<div class="content_xl_rig">
+					<span class="firName">马瑞丽蓄电池es系列46b24rs202丽蓄电瑞丽蓄电池瑞丽蓄瑞丽蓄丽蓄…</span>
+					<span class="secNum">OEM99999999</span>
+					<span class="thirPri">¥2880.00 x9</span>
+				</div>
+			</div>
+			<div class="content_xl">
+				<img class="this_img" src="img/00.jpg"/>
+				<div class="content_xl_rig">
+					<span class="firName">马瑞丽蓄电池es系列46b24rs202丽蓄电瑞丽蓄电池瑞丽蓄瑞丽蓄丽蓄…</span>
+					<span class="secNum">OEM99999999</span>
+					<span class="thirPri">¥2880.00 x9</span>
+				</div>
+			</div>
+			<div class="carType_xl">
+				<div class="carType_xl_top">
+					<div class="carType_xl_top_fir">
+						<img src="img/common_list_ico_code@2x.png"/>
+						<span>奥迪汽车</span>
+					</div>
+					<div class="carType_xl_top_second">
+						询价单号：xj201611091629668976
+					</div>
+				</div>
+				<div class="content_xl">
+					<img class="this_img" src="img/00.jpg"/>
+					<div class="content_xl_rig">
+						<span class="firName-OEM">oem：447260-1893 </span>
+						<span class="secNum_title">马瑞丽蓄电池es系列46b24rs202瑞丽蓄电池蓄马瑞丽蓄电池es系列46b24rs202瑞蓄…</span>
+						<span class="thirPri">¥2880.00 x9 <span>原厂</span></span>
+					</div>
+				</div>
+				<div class="content_xl">
+					<img class="this_img" src="img/00.jpg"/>
+					<div class="content_xl_rig">
+						<span class="firName-OEM">oem：447260-1893 </span>
+						<span class="secNum_title">马瑞丽蓄电池es系列46b24rs202瑞丽蓄电池蓄马瑞丽蓄电池es系列46b24rs202瑞蓄…</span>
+						<span class="thirPri">¥2880.00 x9 <span>原厂</span></span>
+					</div>
+				</div>
+			</div>
+			<div class="totalPri_xl">
+				<span class="show_all_xl">显示全部商品</span>
+				<img src="img/nav_ico_graymore@2x.png"/>
+				
+				<div class="totalPri_xl_rig sureOfMy">
+					确认收货
+				</div>
+				<div class="evaluate">
+					再次购买
+				</div>
+			</div>
+		</div>
+		<div class="blank"></div>
+		<!----------------------------------------------待评价--------------------------------------------------->
+		<div class="blank"></div>
+		<div class="pendingEvaluation">
+			<div class="content_xl">
+				<img class="this_img" src="img/00.jpg"/>
+				<div class="content_xl_rig">
+					<span class="firName">马瑞丽蓄电池es系列46b24rs202丽蓄电瑞丽蓄电池瑞丽蓄瑞丽蓄丽蓄…</span>
+					<span class="secNum">OEM99999999</span>
+					<span class="thirPri">¥2880.00 x9</span>
+				</div>
+			</div>
+			<div class="button">
+				<span>去评价</span>
+				<span>再次购买</span>
+				
+			</div>
+		</div>
+		<div class="blank"></div>
+		<div class="pendingEvaluation">
+			<div class="content_xl">
+				<img class="this_img" src="img/00.jpg"/>
+				<div class="content_xl_rig">
+					<span class="firName">马瑞丽蓄电池es系列46b24rs202丽蓄电瑞丽蓄电池瑞丽蓄瑞丽蓄丽蓄…</span>
+					<span class="secNum">OEM99999999</span>
+					<span class="thirPri">¥2880.00 x9</span>
+				</div>
+			</div>
+			<div class="button">
+				<span>去评价</span>
+				<span>再次购买</span>
+				
+			</div>
+		</div>
+		<!---------------------------------------------------售后中心--------------------------------------------------------------->
+		<div class="blank"></div>
+		<div class="AftermarketCenter">
+			<div class="AftermarketCenter_lef AftermarketCenterActiv">
+				<span>申请售后</span>
+				<span class="bot"></span>
+			</div>
+			<div class="AftermarketCenter_rig">
+				<span>售后跟踪</span>
+				<span></span>
+			</div>
+		</div>
+		<div class="blank"></div>
+		<div class="Aftersale">
+			<div class="title_xl" style="border-bottom:none ;">
+				<span class="line_xl"></span>
+				<span class="name_xl">千品猫<span>（27项）</span></span>
+				<img src="img/list_right_arrow.png"/>
+				<span class="price_xl">¥8990.00</span>
+			</div>
+			<div class="carType_xl_top_second">
+				订单编号：dd2016110916296
+				<span class="AfterSales">
+					申请售后
+				</span>
+			</div>
+			<div class="content_xl" style="border-bottom: none;">
+				<img class="this_img" src="img/00.jpg"/>
+				<div class="content_xl_rig">
+					<span class="firName">马瑞丽蓄电池es系列46b24rs202丽蓄电瑞丽蓄电池瑞丽蓄瑞丽蓄丽蓄…</span>
+					<span class="secNum">OEM99999999</span>
+					<span class="thirPri">¥2880.00 x9</span>
+				</div>
+			</div>
+			<div class="blank"></div>
+			<div class="title_xl" style="border-bottom:none ;">
+				<span class="line_xl"></span>
+				<span class="name_xl">五方汽配中心<span>（27项）</span></span>
+				<img src="img/list_right_arrow.png"/>
+				<span class="price_xl">¥8990.00</span>
+			</div>
+			<div class="carType_xl_top_second">
+				订单编号：dd2016110916296
+				<span class="AfterSales">
+					申请售后
+				</span>
+			</div>
+			<div class="content_xl">
+				<img class="this_img" src="img/00.jpg"/>
+				<div class="content_xl_rig">
+					<span class="firName">马瑞丽蓄电池es系列46b24rs202丽蓄电瑞丽蓄电池瑞丽蓄瑞丽蓄丽蓄…</span>
+					<span class="secNum">OEM99999999</span>
+					<span class="thirPri">¥2880.00 x9</span>
+				</div>
+			</div>
+			<div class="content_xl">
+				<img class="this_img" src="img/00.jpg"/>
+				<div class="content_xl_rig">
+					<span class="firName">马瑞丽蓄电池es系列46b24rs202丽蓄电瑞丽蓄电池瑞丽蓄瑞丽蓄丽蓄…</span>
+					<span class="secNum">OEM99999999</span>
+					<span class="thirPri">¥2880.00 x9</span>
+				</div>
+			</div>
+			<div class="content_xl" style="border-bottom: none;">
+				<img class="this_img" src="img/00.jpg"/>
+				<div class="content_xl_rig">
+					<span class="firName">马瑞丽蓄电池es系列46b24rs202丽蓄电瑞丽蓄电池瑞丽蓄瑞丽蓄丽蓄…</span>
+					<span class="secNum">OEM99999999</span>
+					<span class="thirPri">¥2880.00 x9</span>
+				</div>
+			</div>
+			<div class="showmore">
+				显示全部商品
+			</div>
+		</div>
+		<div class="After-sale-tracking" style="display: none;">
+			<div class="After-sale-tracking-box">
+				<div class="titl-num">
+					<span  class="titl-num-fir">退款编号：TK2016110916296</span>
+					<span  class="titl-num-sec">操作类型：退款</span>
+				</div>
+				<div class="imgBox">
+					<img src="img/00.jpg"/>
+					<img src="img/00.jpg"/>
+					<img src="img/00.jpg"/>
+					<img src="img/00.jpg"/>
+				</div>
+				<div class="bot_time">
+					<span>2016-11-28  13:20:40</span>
+					<span>待退款</span>
+				</div>
+			</div>
+			<div class="blank"></div>
+			<div class="After-sale-tracking-box">
+				<div class="titl-num">
+					<span  class="titl-num-fir">退款编号：TK2016110916296</span>
+					<span  class="titl-num-sec">操作类型：退货</span>
+				</div>
+				<div class="imgBox">
+					<img src="img/00.jpg"/>
+					<img src="img/00.jpg"/>
+					<img src="img/00.jpg"/>
+					<img src="img/00.jpg"/>
+				</div>
+				<div class="bot_time">
+					<span>2016-11-28  13:20:40</span>
+					<span>卖家审核中</span>
+				</div>
+			</div>
+			<div class="blank"></div>
+			<div class="After-sale-tracking-box">
+				<div class="titl-num">
+					<span  class="titl-num-fir">退款编号：TK2016110916296</span>
+					<span  class="titl-num-sec">操作类型：换货</span>
+				</div>
+				<div class="imgBox">
+					<img src="img/00.jpg"/>
+					<img src="img/00.jpg"/>
+					<img src="img/00.jpg"/>
+					<img src="img/00.jpg"/>
+				</div>
+				<div class="bot_time">
+					<span>2016-11-28  13:20:40</span>
+					<span>待买家填写物流</span>
+				</div>
+			</div>
+			<div class="blank"></div>
+			<div class="After-sale-tracking-box">
+				<div class="titl-num">
+					<span  class="titl-num-fir">退款编号：TK2016110916296</span>
+					<span  class="titl-num-sec">操作类型：拒收</span>
+				</div>
+				<div class="imgBox">
+					<img src="img/00.jpg"/>
+					<img src="img/00.jpg"/>
+					<img src="img/00.jpg"/>
+					<img src="img/00.jpg"/>
+				</div>
+				<div class="bot_time">
+					<span>2016-11-28  13:20:40</span>
+					<span>退货成功</span>
+				</div>
+			</div>
+		</div>
+		<!----------------------------------------点击全部时的弹窗-------------------------------------------------------->
+		<div class="shadow" style="display: none;"></div>
+		<div class="showselect" style="display: none;">
+			<div class="spanbox">
+				<span>全部</span>
+				<span>待付款</span>
+				<span>待发货</span>
+				<span>待收货</span>
+				<span>待评价</span>
+				<span>售后中心</span>
+			</div>
+			
+		</div>
+	</section>
+	<img class="goTop" src="img/common_btn_backtop.png"/>
+	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(".goTop").click(function(){
+			$('body,html').animate({scrollTop:0},500);
+		})
+		$(".spanbox span").each(function(){
+			if($(this).text()==$(".all_xl span").text()){
+				$(this).addClass("active").siblings().removeClass("active");
+			}
+			
+		})
+		
+		var r=0;
+		$(".all_xl").click(function(){
+			if(r==0){
+				$(".shadow").show();
+				$(".showselect").show();
+				$("body").css("overflow-y","hidden")
+				r++;
+			}else{
+				$(".shadow").hide();
+				$(".showselect").hide();
+				$("body").css("overflow-y","auto")
+				r--;
+			}
+		})
+		$(".spanbox span").click(function(){
+			$(this).addClass("active").siblings().removeClass("active");
+			$(".all_xl span").text($(this).text())
+			$(".shadow").hide();
+			$(".showselect").hide();
+			$("body").css("overflow-y","auto")
+			r--;
+		})
+		//售后
+		$(".AftermarketCenter div").each(function(){
+			$(this).click(function(){
+				var i = $(this).index()
+				$(this).addClass("AftermarketCenterActiv").siblings().removeClass("AftermarketCenterActiv");
+				$(this).find("span:last-child").addClass("bot");
+				$(this).siblings().find("span:last-child").removeClass("bot")
+				if(i==1){
+					$(".After-sale-tracking").show();
+					$(".Aftersale").hide();
+				}else{
+					$(".After-sale-tracking").hide();
+					$(".Aftersale").show();
+				}
+			})
+		})
+	</script>
+</body>
+</html>

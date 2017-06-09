@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>发货信息---确认收货</title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/deliveryOfsure.css"/>
+	</head>
+	<body>
+		<div class="login_title" style="position: fixed;top: 0;left: 0;width: 100%;z-index: 13;">
+		    <header class="text-center">
+		        <a id="go" href="javascript:void(0);" style="width:0.19rem;height:0.35rem;font-size:19px;position:absolute;top:0.26rem;left:0.24rem;">
+		            <img style="margin-top:0;width:0.19rem;height:0.35rem;display: block;" src="img/arrow-back .png">
+		        </a>
+		        <h1 class="all_xl" style="margin:0;padding:0;font-size:0.36rem;font-weight:500;height:0.88rem;line-height:46px;color: #222;"><span>发货信息</span></h1>
+		    </header>
+		    <input type="hidden" id="basePath" value="">
+		    <input type="hidden" id="vip" value="0">
+		</div>
+		<section style="margin-top: 0.88rem;margin-bottom: 1.32rem;">
+			<div class="blank"></div>
+			<div class="telephone">
+				<div class="tele_lef">
+					<span>400-087-6599</span>
+					<span>如有数量、质量等问题，请联系客服处理</span>
+				</div>
+				<div class="tele_rig"></div>
+			</div>
+			<div class="oneDay">
+				<div class="blank blanks">
+					<span>2017-02-04 14:00:02</span>
+				</div>
+				<div class="chose">
+					<span class="choose sasi"></span>
+					<span class="whichCar">京A7388M3</span>
+				</div>
+				<div class="qingdanDetail">
+					<img class="img" src="img/00.jpg"/>
+					<span class="describe">马瑞丽蓄电池es系列46b24rs系双向安装 防侧撞击..</span>
+					<span class="nums">x2</span>
+				</div>
+				<div class="carType_xl_top_fir">
+					<img src="img/common_list_ico_models copy@2x.png"/>
+					<span>北京奔驰-c200 2015款 2.0t排量</span>
+				</div>
+				<div class="qingdanDetail">
+					<img class="img" src="img/00.jpg"/>
+					<span class="describe">马瑞丽蓄电池es系列46b24rs系双向安装 防侧撞击..</span>
+					<span class="nums">x2</span>
+				</div>
+			</div>
+			<div class="oneDay">
+				<div class="blank blanks">
+					<span>2017-02-04 14:00:02</span>
+				</div>
+				<div class="chose">
+					<span class="choose sasi"></span>
+					<span class="whichCar">京A7388M3</span>
+				</div>
+				<div class="qingdanDetail">
+					<img class="img" src="img/00.jpg"/>
+					<span class="describe">马瑞丽蓄电池es系列46b24rs系双向安装 防侧撞击..</span>
+					<span class="nums">x2</span>
+				</div>
+				<div class="qingdanDetail">
+					<img class="img" src="img/00.jpg"/>
+					<span class="describe">马瑞丽蓄电池es系列46b24rs系双向安装 防侧撞击..</span>
+					<span class="nums">x2</span>
+				</div>
+			</div>
+			<!---------------------班车-------------------------------->
+			<div class="oneDay">
+				<div class="blank blanks">
+					<span>2017-02-04 14:00:02</span>
+				</div>
+				<div class="chose">
+					<span class="choose sasi"></span>
+					<span class="whichCar">圆通快递</span>
+					<span class="danhao">单号:YT456387520</span>
+				</div>
+				<div class="qingdanDetail">
+					<img class="img" src="img/00.jpg"/>
+					<span class="describe">马瑞丽蓄电池es系列46b24rs系双向安装 防侧撞击..</span>
+					<span class="nums">x2</span>
+				</div>
+				<div class="carType_xl_top_fir">
+					<img src="img/common_list_ico_models copy@2x.png"/>
+					<span>北京奔驰-c200 2015款 2.0t排量</span>
+				</div>
+				<div class="qingdanDetail">
+					<img class="img" src="img/00.jpg"/>
+					<span class="describe">马瑞丽蓄电池es系列46b24rs系双向安装 防侧撞击..</span>
+					<span class="nums">x2</span>
+				</div>
+			</div>
+			<div class="oneDay">
+				<div class="blank blanks">
+					<span>2017-02-04 14:00:02</span>
+				</div>
+				<div class="chose">
+					<span class="choose sasi"></span>
+					<span class="whichCar">圆通快递</span>
+					<span class="danhao">单号:YT456387520</span>
+				</div>
+				<div class="qingdanDetail">
+					<img class="img" src="img/00.jpg"/>
+					<span class="describe">马瑞丽蓄电池es系列46b24rs系双向安装 防侧撞击..</span>
+					<span class="nums">x2</span>
+				</div>
+				<div class="qingdanDetail">
+					<img class="img" src="img/00.jpg"/>
+					<span class="describe">马瑞丽蓄电池es系列46b24rs系双向安装 防侧撞击..</span>
+					<span class="nums">x2</span>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="gotoPay">确定(<span>0</span>)</div>
+		</footer>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".sasi").click(function(){
+				if($(this).hasClass("choose")){
+					$(this).addClass("sure").removeClass("choose");
+				}else{
+					$(this).addClass("choose").removeClass("sure");
+				}
+				$(".gotoPay span").text($(".sure").length)
+			})
+			
+		</script>
+	</body>
+</html>
